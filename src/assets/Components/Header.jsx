@@ -3,9 +3,9 @@ import Logo from '/src/assets/img/Logo_Impulsa_Colombia.png';
 export function Header() {
     return (
         <header>
-            <nav className="z-10 w-full backdrop-blur-2xl">
-                <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-                    <div className="flex flex-wrap items-center justify-around py-2 gap-6 md:py-4 md:gap-0 relative">
+            <nav className=" z-10 fixed w-screen backdrop-blur-2xl">
+                <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-0">
+                    <div className="flex flex-wrap items-center justify-around lg:justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
                         <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" className="hidden peer"></input>
                         <div className="relative z-20 w-full flex justify-between lg:w-max md:px-0">
                             <div className="relative flex items-center lg:hidden max-h-10">
@@ -15,7 +15,7 @@ export function Header() {
                                 </label>
                             </div>
 
-                            <a href="#home" aria-label="logo" className="flex space-x-2 items-center">
+                            <a href="#home" aria-label="logo" className="flex space-x-2 items-center mr-6">
                                 <div aria-hidden="true" className="flex space-x-1">
                                     <img src={Logo} alt="logo" className="h-10 lg:h-12"></img>
                                 </div>

@@ -20,7 +20,7 @@ export function Home(){
                     </div>
                     <div className='flex justify-center items-center'>
                         <div className=' bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 rounded-t-full rounded-b-[73rem]'>
-                            <img src={Referencia} loading="lazy" className='p-5 rounded-t-full rounded-b-[73rem] h-full'></img>
+                            <img src={Referencia} loading="lazy" className='p-5 rounded-t-full rounded-b-[73rem]'></img>
                         </div>
                     </div>
                 </div>

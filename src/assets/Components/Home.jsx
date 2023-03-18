@@ -5,12 +5,14 @@ import LogoBancodeBogota from '/src/assets/img/Logo_Banco_de_Bogota.png';
 import LogoScotiabank from '/src/assets/img/Logo_Scotiabank.png';
 import LogoCredicorp from '/src/assets/img/Logo_Credicorp.svg';
 import Referencia from '/src/assets/img/referencia.jpg';
+import Carousel from './Carousel';
+import GridProjects from './GridProjects';
 
 
-export function Home(){
+export function Home() {
     return(
-        <div id='home' className='max-w-7xl mx-auto px-10'>
-            <div  className='h-full pt-32'>
+        <div id='home' className='max-w-7xl mx-auto'>
+            <div  className='pt-32'>
                 <div className='flex flex-col md:flex-row justify-center items-center'>
                     <div className='flex flex-col justify-center items-start'>
                         <h1 className='text-4xl md:text-5xl font-bold text-white'>Descrubre tu <br></br>nuevo hogar</h1>
@@ -24,7 +26,7 @@ export function Home(){
                         </div>
                     </div>
                 </div>
-                <div className="mt-12 grid grid-cols-3 sm:grid-cols-5 bg-white rounded-md py-12">
+                <div className="mt-12 grid grid-cols-3 sm:grid-cols-5 bg-white rounded-t-md bor py-12">
                     <div className="col-span-5 lg:col-span-1 p-4 grayscale transition duration-200 hover:grayscale-0">
                         <a href='https://impulsaproyectos.com/' target='_blank'>
                             <img src={LogoImpulsaProyectosInmobiliarios} className="h-12 w-auto mx-auto" loading="lazy" alt="Logo Impulsa Proyectos Inmobiliarios" width="" height="" />
@@ -51,6 +53,12 @@ export function Home(){
                         </a>
                     </div>
                 </div>
+            </div>
+            <div className=' pt-28 pb-12 bg-white'>
+                <p className='text-lg md:text-xl font-bold text-amber-600'>Nuestros </p>
+                <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
+                
+                <Carousel className="hidden sm:block"/>
             </div>
         </div>
     )

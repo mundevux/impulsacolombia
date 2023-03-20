@@ -1,6 +1,8 @@
+
+
 const projectsData = [
     {
-      image: '../img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg',
+      image: '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.png',
       logo: '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png',
       title: 'Cerasus Monteblanco',
       text: 'Un nuevo Proyecto de Vivienda de Interés Social en Bogotá, un proyecto VIS A OTRO NIVEL.',
@@ -27,7 +29,7 @@ const projectsData = [
         text: 'Es proyecto de vivienda de estrato 3 constrido en la calle 18 No. 1-140 del sector del Rodeo en la ciudad de Tunja.',
         link: 'https://www.google.com',
     },
-  ];
+];
 
 
 export default projectsData;

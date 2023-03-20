@@ -12,11 +12,11 @@ import Carousel from './Carousel';
 export function Home() {
 
     return(
-        <div id='home' className=' bg-shark-900'>
-            <div  className='max-w-7xl mx-auto pt-32'>
-                <div className='flex flex-col md:flex-row justify-center items-center'>
+        <div id='home' className=''>
+            <div  className='pt-32 bg-shark-900'>
+                <div className='flex flex-col md:flex-row justify-center items-center py-12 max-w-7xl mx-auto gap-4'>
                     <div className='flex flex-col justify-center items-start'>
-                        <h1 className='text-4xl md:text-5xl font-bold text-white'>IMPULSA EN EL MUNDO</h1>
+                        <h1 className='text-4xl md:text-5xl font-bold text-white '>IMPULSA EN EL MUNDO</h1>
                         <p className='text-shark-300 text-sm md:text-base font-normal pt-5'>
                             Impulsa Colombia forma parte de un grupo Internacional de empresas formado por un equipo de más de 80 personas que dan vida a la filosofía de la empresa en Colombia, España y Perú: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
                         </p>
@@ -24,13 +24,14 @@ export function Home() {
 
                         </div>
                     </div>
-                    <div className='flex justify-center items-center'>
+                    <div className='flex justify-center items-center pt-10'>
                         <div className=' bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 rounded-t-full rounded-b-[73rem]'>
                             <img src={Referencia} loading="lazy" className='p-5 rounded-t-full rounded-b-[73rem]'></img>
                         </div>
                     </div>
                 </div>
-                <div className="mt-12 grid grid-cols-3 sm:grid-cols-5 bg-white rounded-t-md bor py-12">
+            </div>
+            <div className="mt-12 grid grid-cols-3 sm:grid-cols-5 rounded-t-md py-12 max-w-7xl mx-auto">
                     <div className="col-span-5 lg:col-span-1 p-4 grayscale transition duration-200 hover:grayscale-0">
                         <a href='https://impulsaproyectos.com/' target='_blank'>
                             <img src={LogoImpulsaProyectosInmobiliarios} className="h-12 w-auto mx-auto" loading="lazy" alt="Logo Impulsa Proyectos Inmobiliarios" width="" height="" />
@@ -56,12 +57,10 @@ export function Home() {
                             <img src={LogoCredicorp} className="h-12 w-60 lg:w-auto mx-auto" loading="lazy" alt="Logo Credicorp Fiduciaria" width="" height="" />
                         </a>
                     </div>
-                </div>
             </div>
-            <div className=' pt-28 pb-12 bg-white'>
+            <div className='max-w-7xl mx-auto pt-28 pb-12 bg-white'>
                 <p className='text-lg md:text-xl font-bold text-amber-600'>Nuestros </p>
                 <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
-                
                 <Carousel />
             </div>
 

@@ -3,7 +3,7 @@ import Logo from '/src/assets/img/Logo_Impulsa_Colombia.png';
 
 export function Footer() {
   return (
-    <footer className="pt-10 pb-6">
+    <footer className="pt-10 pb-6 bg-shark-900">
       <div className="mx-auto max-w-7xl px-6 xl:px-6">
         <div className="m-auto">
           <div className="grid grid-cols-5">

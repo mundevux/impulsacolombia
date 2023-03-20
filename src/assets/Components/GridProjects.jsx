@@ -2,11 +2,13 @@ import React from 'react';
 import Slider from 'react-slick';
 import Card from './Card';
 
+
+
 const GridProjects = () => {
 
     const cards = [
         {
-          image: '/src/assets/img/Fachada_Cerasus_Monteblanco.jpg',
+          image: '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg',
           logo: '/src/assets/img/Logo_Cerasus_Monteblanco.png',
           title: 'Cerasus Monteblanco',
           text: 'Cerasus Monteblanco es el Nuevo Proyecto de Vivienda de Interés Social en Bogotá, nuestro proyecto VIS A OTRO NIVEL estará ubicado en la Diagonal 100 sur # 1A-26 localidad de Usme.',

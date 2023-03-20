@@ -2,7 +2,7 @@
 
 const projectsData = [
     {
-      image: '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.png',
+      image: '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg',
       logo: '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png',
       title: 'Cerasus Monteblanco',
       text: 'Un nuevo Proyecto de Vivienda de Interés Social en Bogotá, un proyecto VIS A OTRO NIVEL.',

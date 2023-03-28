@@ -13,7 +13,7 @@ export function Home() {
 
     return(
         <div id='home' className=' bg-shark-900'>
-            <div  className='max-w-7xl mx-auto pt-32'>
+            <div  className='max-w-7xl mx-auto pt-32 px-6 xl:px-6'>
                 <div className='flex flex-col md:flex-row justify-center items-center'>
                     <div className='flex flex-col justify-center items-start'>
                         <h1 className='text-4xl md:text-5xl font-bold text-white'>IMPULSA EN EL MUNDO</h1>
@@ -58,11 +58,13 @@ export function Home() {
                     </div>
                 </div>
             </div>
-            <div className=' pt-28 pb-12 bg-white'>
-                <p className='text-lg md:text-xl font-bold text-amber-600'>Nuestros </p>
-                <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
-                
-                <Carousel />
+            <div className='pt-28 pb-12 bg-white'>
+                <div className='max-w-7xl mx-auto px-6 xl:px-6'>
+                    <p className=' text-lg md:text-xl font-bold text-amber-600'>Nuestros </p>
+                    <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
+                    
+                    <Carousel />
+                </div>
             </div>
 
            

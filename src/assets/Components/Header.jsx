@@ -1,6 +1,13 @@
+
+import React, { useState } from 'react';
 import Logo from '/src/assets/img/Logo_Impulsa_Colombia.png';
 
+
 export function Header() {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const options = ['Opción 1', 'Opción 2', 'Opción 3'];
+
     return (
         <header>
             <nav className=" z-10 fixed w-screen bg-shark-900 backdrop-blur-2xl">
@@ -21,8 +28,7 @@ export function Header() {
                                 </div>
                             </a>
                         </div>
-                        <div aria-hidden="true" className="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70"></div>
-                        <div className="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-shark-900 shadow-2xl shadow-gray-600/10 justify-between w-full invisible opacity-0 translate-y-1  absolute top-full left-0 transition-all duration-300 scale-95 origin-top 
+                        <div className="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-shark-900 shadow-2xl shadow-gray-600/10 justify-between invisible opacity-0 translate-y-1  absolute top-full left-0 transition-all duration-300 scale-95 origin-top 
                                 lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none
                                 peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none 
                                 dark:shadow-none dark:bg-gray-800 dark:border-gray-700">
@@ -39,9 +45,23 @@ export function Header() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#proyects" className="block md:px-4 transition text-base text-white hover:text-amber-500">
-                                            <span>Proyectos</span>
-                                        </a>
+                                        <button className="block md:px-4 transition text-base text-white hover:text-amber-500" onClick={() => setIsOpen(!isOpen)}>
+                                            <span className='pr-2'>Proyectos</span>
+                                            {isOpen ? (<i className="fa-solid fa-caret-up pr-2"></i>) : (<i className="fa-solid fa-caret-down pr-2"></i>)}
+                                        </button>
+                                        {isOpen && (
+                                            <div className='z-30'>
+                                                <ul className='flex flex-col'>
+                                                    {options.map((option, index) => (
+                                                        <li key={index}>
+                                                            <a href="#projects" className="block md:px-4 transition text-base text-white hover:text-amber-500">
+                                                                <span>{option}</span>
+                                                            </a>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
                                     </li>
                                     <li>
                                         <a href="#contact" className="block md:px-4 transition text-base text-white hover:text-amber-500">

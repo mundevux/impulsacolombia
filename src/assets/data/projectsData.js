@@ -1,9 +1,10 @@
-
+import logoMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png';
+import fachadaMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg';
 
 const projectsData = [
     {
-      image: '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg',
-      logo: '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png',
+      image: {fachadaMonteblanco},
+      logo: {logoMonteblanco},
       title: 'Cerasus Monteblanco',
       text: 'Un nuevo Proyecto de Vivienda de Interés Social en Bogotá, un proyecto VIS A OTRO NIVEL.',
       link: 'https://www.google.com',

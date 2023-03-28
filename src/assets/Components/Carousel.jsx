@@ -3,41 +3,9 @@ import Slider from 'react-slick';
 import Card from './Card';
 import projectsData from '../data/projectsData';
 
-import logoMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png';
-
-
 
 const Carousel = () => {
-  const cards = [
-    {
-      image: {logoMonteblanco},
-      logo: '/src/assets/img/Logo_Cerasus_Monteblanco.png',
-      title: 'Cerasus Monteblanco',
-      text: 'Cerasus Monteblanco es el Nuevo Proyecto de Vivienda de Interés Social en Bogotá, nuestro proyecto VIS A OTRO NIVEL estará ubicado en la Diagonal 100 sur # 1A-26 localidad de Usme.',
-      link: 'https://www.google.com',
-    },
-    {
-      image: '/src/assets/img/Fachada_Cerasus_Danubio.png',
-      logo: '/src/assets/img/Logo_Cerasus_Danubio.png',
-      title: 'Cerasus Danubio',
-      text: 'Un nuevo concepto de construcción que busca dirigir los proyectos hacia un factor humano mas que monetario. Por eso creamos proyectos donde sin importar el estrato socioeconómico se busca el bienestar de nuestros habitantes.',
-      link: 'https://www.google.com',
-    },
-    {
-      image: '/src/assets/img/Fachada_Cerasus_Usme.jpg',
-      logo: '/src/assets/img/Logo_Cerasus_Usme.png',
-      title: 'Cerasus Usme',
-      text: 'Cerasus Usme es un proyecto de vivienda VIP (interés prioritario) construido en la Calle 110 A Sur No 3 A- 40 del barrio Villa Israel de la Localidad de Usme.',
-      link: 'https://www.google.com',
-    },
-    {
-        image: '/src/assets/img/Fachada_Avium_Tunja.jpg',
-        logo: '/src/assets/img/Logo_Avium_Tunja.png',
-        title: 'Avium Tunja',
-        text: 'Avium Tunja es proyecto de vivienda de estrato 3 que se construirá en la calle 18 No. 1-140 del sector del Rodeo en la ciudad de Tunja.',
-        link: 'https://www.google.com',
-    },
-  ];
+
   const settings = {
     dots: true,
     infinite: true,

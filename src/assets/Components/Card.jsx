@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 const Card = ({ image, logo, title, text, link }) => {
+  
     return (
       <div className="bg-white rounded-lg overflow-hidden shadow-md">
         <img className="w-full h-64 object-cover" src={image} alt={title} />

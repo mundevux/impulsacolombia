@@ -6,6 +6,8 @@ import LogoScotiabank from '/src/assets/img/Logo_Scotiabank.png';
 import LogoCredicorp from '/src/assets/img/Logo_Credicorp.svg';
 import Referencia from '/src/assets/img/referencia.jpg';
 import Carousel from './Carousel';  
+import BlogSection from './BlogSeccion';
+import ContactForm from './ContactForm';
 
 
 
@@ -60,10 +62,13 @@ export function Home() {
             </div>
             <div className='pt-28 pb-12 bg-white'>
                 <div className='max-w-7xl mx-auto px-6 xl:px-6'>
-                    <p className=' text-lg md:text-xl font-bold text-amber-600'>Nuestros </p>
-                    <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
-                    
                     <Carousel />
+                </div>
+                <div className='max-w-7xl mx-auto px-6 xl:px-6'>
+                    <BlogSection/>
+                </div>
+                <div className='max-w-7xl mx-auto px-6 xl:px-6'>
+                    <ContactForm/>
                 </div>
             </div>
 

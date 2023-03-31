@@ -21,24 +21,6 @@ const BlogSection = () => {
       description: 'In hac habitasse platea dictumst. Duis bibendum ligula ac metus fermentum, nec mattis metus dapibus.',
       link: '#',
     },
-    {
-        image: 'https://via.placeholder.com/400x200',
-        title: 'Blog 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        link: '#',
-      },
-      {
-        image: 'https://via.placeholder.com/400x200',
-        title: 'Blog 2',
-        description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-        link: '#',
-      },
-      {
-        image: 'https://via.placeholder.com/400x200',
-        title: 'Blog 3',
-        description: 'In hac habitasse platea dictumst. Duis bibendum ligula ac metus fermentum, nec mattis metus dapibus.',
-        link: '#',
-      },
   ];
 
   return (
@@ -50,7 +32,7 @@ const BlogSection = () => {
           <div key={index}>
             <Blog image={blog.image} title={blog.title} description={blog.description} />
             <a href={blog.link} className="bg-amber-400 hover:bg-amber-500 transition text-white text-base font-bold rounded-lg p-2">
-              Me interesa
+              Leer más
             </a>
           </div>
         ))}

@@ -1,7 +1,11 @@
+import React, { useState } from 'react';
 import Logo from '/src/assets/img/Logo_Impulsa_Colombia.png';
 
-
 export function Footer() {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const options = ['Opción 1', 'Opción 2', 'Opción 3'];
+
   return (
     <footer className="pt-10 pb-6 bg-shark-900">
       <div className="mx-auto max-w-7xl px-6 xl:px-6">
@@ -29,30 +33,38 @@ export function Footer() {
                 <h3 className='font-bold text-white text-3xl'>Enlaces</h3> 
                 <ul className="flex flex-col justify-center">
                     <li>
-                    <a href="#home" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
-                        Inicio
-                    </a>
-                    </li>
-
-                    <li>
-                    <a href="#aboutus" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
-                        Nosotros
-                    </a>
+                        <a href="#home" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
+                            Inicio
+                        </a>
                     </li>
                     <li>
-                    <a href="#solutions" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
-                        Proyectos
-                    </a>
+                        <a href="#aboutus" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
+                            Nosotros
+                        </a>
                     </li>
                     <li>
-                    <a href="#contact" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
-                        Contacto
-                    </a>
+                        <button className="transition text-shark-300 text-base font-normal hover:text-amber-500" onClick={() => setIsOpen(!isOpen)}>
+                            <span className='pr-2'>Proyectos</span>
+                            {isOpen ? (<i className="fa-solid fa-caret-up pr-2"></i>) : (<i className="fa-solid fa-caret-down pr-2"></i>)}
+                        </button>
+                        {isOpen && (
+                            <div className='relative lg:absolute z-30 bg-shark-900 rounded-sm'>
+                                <ul className='flex flex-col'>
+                                    {options.map((option, index) => (
+                                        <li key={index}>
+                                            <a href="#projects" className="transition md:mx-4 text-shark-300 text-sm font-normal hover:text-amber-500">
+                                                <span>{option}</span>
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}                    
                     </li>
                     <li>
-                    <a href="#contact" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
-                        Blog
-                    </a>
+                        <a href="#contact" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
+                            Contacto
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -102,8 +114,8 @@ export function Footer() {
             </div>
           </div>
           <div className='text-center mt-4 border-t-2  border-primary dark:border-secondary'>
-            <span className="block text-gray-500 dark:text-gray-400 pt-8">
-              Copyright &copy; <span id="year">2023</span> by Código Creativo. All rights reserved.
+            <span className="block text-gray-500 dark:text-gray-400 pt-4">
+              Copyright &copy; <span id="year">2023</span> by <a href="https://codcreativo.com/">Código Creativo</a>. All rights reserved.
             </span>
           </div>
         </div>

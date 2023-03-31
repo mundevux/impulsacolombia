@@ -69,6 +69,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: '0px',
         },
       },
     ],

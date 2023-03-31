@@ -83,7 +83,7 @@ const Carousel = () => {
       </div>
       <Slider {...settings}>
         {projectsData.map((projectsData, index) => (
-          <div key={index} className="px-2">
+          <div key={index} className="px-2 my-4">
             <Card image={projectsData.image} logo={projectsData.logo} title={projectsData.title} text={projectsData.text} link={projectsData.link} />
           </div>
         ))}

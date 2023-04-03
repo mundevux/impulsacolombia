@@ -37,12 +37,12 @@ export function CerasusMonteblanco(){
                 <div className="flex justify-center items-center -mt-28 relative z-10 pb-6">
                     <img src={logoCerasusMonteblanco} alt="Logo Conjunto Residencial Cerasus Monteblanco apartamentos Vis en Bogotá" className=" w-52 h-52 rounded-full object-cover border-[1px] border-shark-600 shadow shadow-shark-500/40" />
                 </div>
-                <div className="flex flex-col items-center justify-center text-center pb-5">
+                <div className="flex flex-col items-center justify-center text-center pb-5 px-6">
                     <h1 className="text-4xl md:text-5xl font-bold text-shark-900">Cerasus Monteblanco</h1>
                     <p className="text-lg md:text-xl font-medium text-shark-700">Apartamentos en venta en Bogotá</p>
                     <p className="text-lg md:text-xl font-medium text-shark-700">El hogar de tus sueños en una ubicación privilegiada</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center px-6">
                     <div className="flex flex-col items-center justify-center">
                         <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
                             ¿Estás buscando una vivienda asequible y de alta calidad en una zona tranquila? ¡Cerasus Monteblanco es el lugar perfecto para ti!

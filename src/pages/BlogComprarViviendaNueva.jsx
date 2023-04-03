@@ -53,7 +53,7 @@ export function BlogComprarViviendaNueva() {
                     </div>
                     <p className='text-base md:text-lg font-medium text-shark-900 pb-5'>En conclusión, la compra de una vivienda es una decisión importante que requiere de tiempo, paciencia y una buena planificación. Con estos consejos, estarás más preparado para realizar una elección acertada y hacer de tu hogar un espacio cómodo y seguro.</p>
                 </div>
-                <div id='contact' className=' mx-auto px-6 xl:px-6'>
+                <div id='contact' >
                     <ContactForm />
                 </div>
             </div>

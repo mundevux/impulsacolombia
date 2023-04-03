@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import Iframe from 'react-iframe';
 
-
 export function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
     const [project, setProject] = useState('');
-
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted!');
@@ -16,7 +13,7 @@ export function ContactForm() {
         console.log(`Email: ${email}`);
         console.log(`Phone: ${tel}`);
         console.log(`Project: ${project}`);
-        // Add code to submit form data to server
+        
     };
 
   return (
@@ -74,4 +71,3 @@ export function ContactForm() {
   );
 };
 
-export default ContactForm;

@@ -42,7 +42,7 @@ export function Header() {
 
     return (
         <header>
-            <nav className=" z-10 fixed w-screen bg-shark-900 backdrop-blur-2xl">
+            <nav className=" z-20 fixed w-screen bg-shark-900 backdrop-blur-2xl">
                 <div className="max-w-7xl mx-auto md:px-12 xl:px-0">
                     <div className="flex flex-wrap items-center justify-around lg:justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
                         <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" className="hidden peer"></input>

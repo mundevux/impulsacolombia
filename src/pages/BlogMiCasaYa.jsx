@@ -43,7 +43,7 @@ export function BlogMiCasaYa() {
                     </p>
 
                 </div>
-                <div id='contact' className=' mx-auto px-6 xl:px-6'>
+                <div id='contact'>
                     <ContactForm />
                 </div>
             </div>

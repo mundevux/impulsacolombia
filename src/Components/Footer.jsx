@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 
 export function Footer() {
 
-    const [isOpen, setIsOpen] = useState(false);
-    const options = ['Opción 1', 'Opción 2', 'Opción 3'];
-
   return (
     <footer className="pt-10 pb-6 bg-shark-900">
       <div className="mx-auto max-w-7xl px-6 xl:px-6">
@@ -44,23 +41,9 @@ export function Footer() {
                         </a>
                     </li>
                     <li>
-                        <button className="transition text-shark-300 text-base font-normal hover:text-amber-500" onClick={() => setIsOpen(!isOpen)}>
-                            <span className='pr-2'>Proyectos</span>
-                            {isOpen ? (<i className="fa-solid fa-caret-up pr-2"></i>) : (<i className="fa-solid fa-caret-down pr-2"></i>)}
-                        </button>
-                        {isOpen && (
-                            <div className='relative lg:absolute z-30 bg-shark-900 rounded-sm'>
-                                <ul className='flex flex-col'>
-                                    {options.map((option, index) => (
-                                        <li key={index}>
-                                            <a href="#projects" className="transition md:mx-4 text-shark-300 text-sm font-normal hover:text-amber-500">
-                                                <span>{option}</span>
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}                    
+                        <a href="#projects" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
+                            Proyectos
+                        </a>                    
                     </li>
                     <li>
                         <a href="#contact" className="transition text-shark-300 text-base font-normal hover:text-amber-500">

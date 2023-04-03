@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Card from './Card';
+import CardProjects from './CardProjects';
 
 import logoMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png';
 import fachadaMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg';
@@ -15,7 +15,7 @@ import fachadaCerasusSextaEntrada from '/src/assets/img/Cerasus_Sexta_Entrada/Fa
 import logoPrunusSextaEntrada from '/src/assets/img/Prunus_Sexta_Entrada/Logo_Prunus_Sexta_Entrada.png';
 import fachadaPrunusSextaEntrada from '/src/assets/img/Prunus_Sexta_Entrada/Fachada_Prunus_Sexta_Entrada.png';
 
-export function Carousel() {
+export function CarouselProjects() {
 
   const projectsData = [
     {
@@ -103,7 +103,7 @@ export function Carousel() {
       <Slider {...settings}>
         {projectsData.map((projectsData, index) => (
           <div key={index} className="px-2 my-4">
-            <Card image={projectsData.image} logo={projectsData.logo} title={projectsData.title} text={projectsData.text} link={projectsData.link} />
+            <CardProjects image={projectsData.image} logo={projectsData.logo} title={projectsData.title} text={projectsData.text} link={projectsData.link} />
           </div>
         ))}
       </Slider>

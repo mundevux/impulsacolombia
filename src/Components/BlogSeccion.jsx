@@ -1,39 +1,38 @@
 import React from 'react';
-import Blog from '/src/Components/Blog';
+import CardBlog from '/src/Components/CardBlog';
+import { Link } from 'react-router-dom';
+
+import bannerMiCasaYa from '/src/assets/img/Blog/Blog_Mi_Casa_Ya/Subsidio-de-Mi-casa-ya-2022.jpg';
+import bannerConsejos from '/src/assets/img/Blog/Consejos_Vivienda_Nueva/consejos-para-comprar-vivienda-nueva.jpg';
 
 export function BlogSection() {
   const blogs = [
     {
-      image: 'https://via.placeholder.com/400x200',
-      title: 'Blog 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      link: '#',
+      image: bannerMiCasaYa,
+      title: 'Subsidio de Mi casa ya en 2022',
+      description: '¿Qué es Mi casa ya? Es un programa del gobierno nacional que facilita el acceso a la compra de una primera vivienda para […]',
+      link: '/blog-mi-casa-ya',
     },
     {
-      image: 'https://via.placeholder.com/400x200',
-      title: 'Blog 2',
-      description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-      link: '#',
+      image: bannerConsejos,
+      title: 'Consejos para comprar vivienda nueva',
+      description: 'Actualmente la oferta de vivienda se ha ampliado en el territorio nacional, sin embargo, en muchos casos no se está seguro de la […]',
+      link: '/blog-comprar-vivienda-nueva',
     },
-    {
-      image: 'https://via.placeholder.com/400x200',
-      title: 'Blog 3',
-      description: 'In hac habitasse platea dictumst. Duis bibendum ligula ac metus fermentum, nec mattis metus dapibus.',
-      link: '#',
-    },
+    
   ];
 
   return (
     <div className="container mx-auto py-12">
         <p className=' text-lg md:text-xl font-bold text-amber-600'>Sala de </p>
         <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Prensa</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
         {blogs.map((blog, index) => (
           <div key={index}>
-            <Blog image={blog.image} title={blog.title} description={blog.description} />
-            <a href={blog.link} className="bg-amber-400 hover:bg-amber-500 transition text-white text-base font-bold rounded-lg p-2">
+            <CardBlog image={blog.image} title={blog.title} description={blog.description} />
+            <Link to={blog.link} className="bg-amber-400 hover:bg-amber-500 transition text-white text-base font-bold rounded-lg p-2">
               Leer más
-            </a>
+            </Link>
           </div>
         ))}
       </div>

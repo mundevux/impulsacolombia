@@ -7,9 +7,10 @@ import LogoCredicorp from '/src/assets/img/Logo_Credicorp.svg';
 import Referencia from '/src/assets/img/referencia.jpg';
 import { Header } from '../Components/Header';
 import { Footer } from '../Components/Footer';
-import { Carousel } from '../Components/Carousel';  
+import { CarouselProjects } from '../Components/CarouselProjects';  
 import { BlogSection } from '../Components/BlogSeccion';
 import { ContactForm } from '../Components/ContactForm';
+
 
 export function Home() {
 
@@ -62,13 +63,13 @@ export function Home() {
                 </div>
             </div>
             <div className='pt-28 pb-12 bg-white'>
-                <div className='max-w-7xl mx-auto px-6 xl:px-6'>
-                    <Carousel />
+                <div id='projects' className='max-w-7xl mx-auto px-6 xl:px-6'>
+                    <CarouselProjects />
                 </div>
-                <div className='max-w-7xl mx-auto px-6 xl:px-6'>
+                <div id='blog' className='max-w-7xl mx-auto px-6 xl:px-6'>
                     <BlogSection />
                 </div>
-                <div className='max-w-7xl mx-auto px-6 xl:px-6'>
+                <div id='contact' className='max-w-7xl mx-auto px-6 xl:px-6'>
                     <ContactForm />
                 </div>
             </div>

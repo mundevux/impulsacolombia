@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Card = ({ image, logo, title, text, link }) => {
+const CardProjects = ({ image, logo, title, text, link }) => {
   
     return (
       <div className="bg-white rounded-lg overflow-hidden shadow-md">
@@ -25,4 +25,4 @@ const Card = ({ image, logo, title, text, link }) => {
   };
   
 
-export default Card;
+export default CardProjects;

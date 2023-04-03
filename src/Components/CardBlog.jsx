@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Blog = ({ image, title, description }) => {
+const CardBlog = ({ image, title, description }) => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden mb-6">
       <img src={image} alt={title} className="w-full h-56 object-cover" />
@@ -12,4 +12,4 @@ const Blog = ({ image, title, description }) => {
   );
 };
 
-export default Blog;
+export default CardBlog;

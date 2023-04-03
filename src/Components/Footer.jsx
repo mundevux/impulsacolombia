@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '/src/assets/img/Logo_Impulsa_Colombia.png';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
 
@@ -33,9 +34,9 @@ export function Footer() {
                 <h3 className='font-bold text-white text-3xl'>Enlaces</h3> 
                 <ul className="flex flex-col justify-center">
                     <li>
-                        <a href="#home" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
+                        <Link to="/" className="transition text-shark-300 text-base font-normal hover:text-amber-500">
                             Inicio
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#aboutus" className="transition text-shark-300 text-base font-normal hover:text-amber-500">

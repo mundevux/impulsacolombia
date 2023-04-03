@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import Logo from '/src/assets/img/Logo_Impulsa_Colombia.png';
+import { Link } from 'react-router-dom';
 
 
 export function Header() {
@@ -36,9 +37,9 @@ export function Header() {
                             <div className="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto lg:pt-0">
                                 <ul className="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
                                     <li>
-                                        <a href="#home" className="block md:px-4 transition text-base text-white hover:text-amber-500">
+                                        <Link to="/" className="block md:px-4 transition text-base text-white hover:text-amber-500">
                                             <span>Inicio</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <a href="#aboutus" className="block md:px-4 transition text-base text-white hover:text-amber-500">

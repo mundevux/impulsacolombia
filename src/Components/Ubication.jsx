@@ -12,12 +12,16 @@ const Ubication = ({nameUbication, linkDirection, direction, city, refPhone, pho
                     <a href={refPhone} className='text-shark-50 text-sm md:text-base font-normal pl-2'>{phone}</a>
                 </div>
                 <div className='flex items-center pb-2'>
-                    <h3 className='text-shark-100 font-semibold text-base md:text-xl'>WhatsApp: </h3>
-                    <a href={refWhatsApp} className='text-shark-50 text-base font-normal pl-2'>{whatsapp}</a>
+                    {
+                        refWhatsApp === '' ? <h3 className='text-shark-100 font-semibold text-base md:text-xl'>h</h3> : <h3 className='text-shark-100 font-semibold text-base md:text-xl'>WhatsApp: </h3>
+                    }
+                    <a href={refWhatsApp} className='text-shark-50 text-sm md:text-base font-normal pl-2'>{whatsapp}</a>
                 </div>
-                <div className='flex items-center pb-2'>
-                    <h3 className='text-shark-100 font-semibold text-base md:text-xl'>Email: </h3>
-                    <a href={refEmail} className='text-shark-50 text-base font-normal pl-2'>{email}</a>
+                <div className='flex items-center pb-4'>
+                    {
+                        refEmail === '' ? <h3 className='text-shark-100 font-semibold text-base md:text-xl'>Email: </h3> : <h3 className='text-shark-100 font-semibold text-base md:text-xl'>Email: </h3>
+                    }
+                    <a href={refEmail} className='text-shark-50 text-sm md:text-base font-normal pl-2'>{email}</a>
                 </div>
                 {iframe}
             </div>    

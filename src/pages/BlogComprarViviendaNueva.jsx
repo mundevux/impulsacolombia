@@ -15,6 +15,10 @@ export function BlogComprarViviendaNueva() {
         city: 'Bogotá, Colombia',
         refPhone: 'tel:+576017942134',
         phone: '(601) 794 2134',
+        refWhatsApp: 'https://wa.me/573176676375',
+        whatsapp: '(317) 667 6375',
+        refEmail: 'mailto:info@impulsacolombia.com.co',
+        email: 'info@impulsacolombia.com.co',
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
                     className='w-full h-full rounded-md'
@@ -80,6 +84,10 @@ export function BlogComprarViviendaNueva() {
                             city={oficinaPrincipal.city}
                             refPhone={oficinaPrincipal.refPhone}
                             phone={oficinaPrincipal.phone}
+                            refWhatsApp={oficinaPrincipal.refWhatsApp}
+                            whatsapp={oficinaPrincipal.whatsapp}
+                            refEmail={oficinaPrincipal.refEmail}
+                            email={oficinaPrincipal.email}   
                             iframe={oficinaPrincipal.iframe}
                             />
                 </div>

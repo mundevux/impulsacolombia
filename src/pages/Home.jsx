@@ -24,6 +24,10 @@ export function Home() {
         city: 'Bogotá, Colombia',
         refPhone: 'tel:+576017942134',
         phone: '(601) 794 2134',
+        refWhatsApp: 'https://wa.me/573176676375',
+        whatsapp: '(317) 667 6375',
+        refEmail: 'mailto:info@impulsacolombia.com.co',
+        email: 'info@impulsacolombia.com.co',
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
                     className='w-full h-full rounded-md'
@@ -45,15 +49,15 @@ export function Home() {
                         </p>
                         <div className='w-full flex flex-col justify-center items-center'>
                             <div className='py-5'>
-                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3'>Viviendas entregadas en el mundo</h2>
+                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3 text-center'>Viviendas entregadas en el mundo</h2>
                                 <p className="text-xl md:text-3xl font-bold text-center text-amber-400 pb-2">Más de 18 mil viviendas</p>
                             </div>
                             <div>
-                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3'>Viviendas entregadas en España</h2>
+                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3 text-center'>Viviendas entregadas en España</h2>
                                 <Counter end={17610} />
                             </div>
                             <div>
-                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3'>Viviendas entregadas en Colombia</h2>
+                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3 text-center'>Viviendas entregadas en Colombia</h2>
                                 <Counter end={866} />
                             </div>
                         </div>
@@ -115,6 +119,10 @@ export function Home() {
                             city={oficinaPrincipal.city}
                             refPhone={oficinaPrincipal.refPhone}
                             phone={oficinaPrincipal.phone}
+                            refWhatsApp={oficinaPrincipal.refWhatsApp}
+                            whatsapp={oficinaPrincipal.whatsapp}
+                            refEmail={oficinaPrincipal.refEmail}
+                            email={oficinaPrincipal.email}                            
                             iframe={oficinaPrincipal.iframe}
                             />
                     </div>

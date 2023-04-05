@@ -91,31 +91,44 @@ export function CerasusMonteblanco(){
                     <img src={logoCerasusMonteblanco} alt="Logo Conjunto Residencial Cerasus Monteblanco apartamentos Vis en Bogotá" className=" w-52 h-52 rounded-full object-cover border-[1px] border-shark-600 shadow shadow-shark-500/40" />
                 </div>
                 <div className="flex flex-col items-center justify-center text-center px-6">
-                    <h1 className="text-4xl md:text-5xl font-bold text-shark-900">Cerasus Monteblanco</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-shark-900 pb-4">Cerasus Monteblanco</h1>
                     <p className="text-lg md:text-xl font-medium text-shark-700">Apartamentos en venta en Bogotá</p>
                     <p className="text-lg md:text-xl font-medium text-shark-700">El hogar de tus sueños en una ubicación privilegiada</p>
+                    <div className="w-full">
+                        <ul className="flex justify-around md:justify-center my-3">
+                            <li className="text-sm md:text-lg font-medium text-shark-700 mx-2">
+                                <span className="text-amber-500 pr-2">•</span>
+                                Área de 42m2
+                            </li>
+                            <li className="text-sm md:text-lg font-medium text-shark-700 mx-2">
+                                <span className="text-amber-500 pr-2">•</span>
+                                Hasta 150 SMMLV
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="w-full h-1 bg-amber-300 rounded-sm mt-4 mb-10"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
                     <div className="flex flex-col items-center ">
                         <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                            ¿Estás buscando una vivienda asequible y de alta calidad en una zona tranquila? ¡Cerasus Monteblanco es el lugar perfecto para ti!
+                            ¿Estás buscando una <span className="text-amber-500">vivienda asequible</span> y de <span className="text-amber-500">alta calidad</span> en una zona tranquila? ¡Cerasus Monteblanco es el lugar perfecto para ti!
                         </p>
                         <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                            Este proyecto inmobiliario de viviendas de interés social (VIS) cuenta con un total de 162 viviendas de 42 mt2 cada una, diseñadas para ofrecer a las familias un espacio cómodo y funcional. Cada vivienda cuenta con 3 habitaciones, 2 baños, sala, cocina, comedor y cuarto de ropas para satisfacer todas tus necesidades.
+                            Este proyecto inmobiliario de viviendas de interés social <span className="text-amber-500">(VIS)</span> cuenta con un total de 162 viviendas de 42 mt2 cada una, diseñadas para ofrecer a las familias un <span className="text-amber-500">espacio cómodo</span> y <span className="text-amber-500">funcional</span>. Cada vivienda cuenta con 3 habitaciones, 2 baños, sala, cocina, comedor y cuarto de ropas para satisfacer todas tus necesidades.
                         </p>
                         <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                            Además, el proyecto cuenta con una serie de comodidades para que disfrutes de tu hogar al máximo. El salón comunal es el lugar perfecto para celebrar reuniones con tus amigos y familiares, mientras que la zona BBQ te permite disfrutar de deliciosas comidas al aire libre. Para aquellos que quieren mantenerse en forma, el gimnasio ofrece una amplia variedad de equipos para entrenar.
+                            Además, el proyecto cuenta con una serie de comodidades para que <span className="text-amber-500">disfrutes de tu hogar al máximo</span>. El salón comunal es el lugar perfecto para celebrar reuniones con tus amigos y familiares, mientras que la zona BBQ te permite disfrutar de deliciosas comidas al aire libre. Para aquellos que quieren mantenerse en forma, el gimnasio ofrece una amplia variedad de equipos para entrenar.
                         </p> 
                     </div>    
                     <ImageGallery images={imageProject} />
                 </div>
                 <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                    En Cerasus Monteblanco, no solo tendrás un hogar cómodo y funcional, sino que también estarás ubicado en una zona privilegiada. La ubicación del proyecto ha sido elegida cuidadosamente para ofrecerte una vida tranquila y segura, pero al mismo tiempo, cerca de todo lo que necesitas.
+                    En Cerasus Monteblanco, no solo tendrás un hogar cómodo y funcional, sino que también estarás ubicado en una <span className="text-amber-500">zona privilegiada</span>. La ubicación del proyecto ha sido elegida cuidadosamente para ofrecerte una vida tranquila y segura, pero al mismo tiempo, cerca de todo lo que necesitas.
                 </p>
                 <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                    No esperes más para tener la vida que siempre has querido y hacer realidad tus sueños de tener una casa propia. ¡Visítanos y descubre todo lo que Cerasus Monteblanco tiene para ofrecer!
+                    No esperes más para tener <span className="text-amber-500">la vida que siempre has querido</span> y hacer realidad tus sueños de tener una casa propia. ¡Visítanos y descubre todo lo que Cerasus Monteblanco tiene para ofrecer!
                 </p>
+                <h2 className=' text-2xl md:text-4xl font-bold text-amber-400 pt-4 text-center'>Características</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-around w-full pb-5 px-6">
                     {
                         features.map((feature, index) => (
@@ -125,7 +138,7 @@ export function CerasusMonteblanco(){
                         ))
                     }
                 </div>
-                <div id='contact' className='max-w-7xl mx-auto px-4 xl:px-6'>
+                <div id='contact' className='max-w-7xl mx-auto'>
                     <p className=' text-lg md:text-xl font-bold text-amber-600'>Hablemos</p>
                     <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Es fácil contactarnos</h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>

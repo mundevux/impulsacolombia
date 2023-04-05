@@ -1,15 +1,33 @@
 import { Footer } from "../Components/Footer";
 import { Header } from "../Components/Header";
 import { ContactForm } from "../Components/ContactForm";
-import { Link } from "react-router-dom";
+import Iframe from "react-iframe";
+import Ubication from "../Components/Ubication";
 import bannerConsejos from '/src/assets/img/Blog/Consejos_Vivienda_Nueva/consejos-para-comprar-vivienda-nueva.jpg';
 import bannerComprar from '/src/assets/img/Blog/Consejos_Vivienda_Nueva/comprar-vivienda-nueva.jpg'
 
 export function BlogComprarViviendaNueva() {
+
+    const oficinaPrincipal = {
+        nameUbication: 'Oficina Principal',
+        linkDirection: 'https://goo.gl/maps/Txs3cUnbB4SzWqb58',
+        direction: 'Calle 98 # 8- 37',
+        city: 'Bogotá, Colombia',
+        refPhone: 'tel:+576017942134',
+        phone: '(601) 794 2134',
+        iframe: <Iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
+                    className='w-full h-full rounded-md'
+                    frameBorder="0"
+                    loading='lazy'
+                    allowFullScreen
+                /> ,
+    }
+
     return(
         <div>
             <Header />
-            <div className="max-w-7xl mx-auto pt-32 px-6 xl:px-6">
+            <div className="max-w-7xl mx-auto pt-32 px-4 xl:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-10">
                     <img src={bannerConsejos}  className="w-auto mx-auto rounded-lg shadow-md " loading="lazy" alt="Banner Consejos para Comprar Vivienda Nueva"></img>
                     <div className="">
@@ -53,8 +71,17 @@ export function BlogComprarViviendaNueva() {
                     </div>
                     <p className='text-base md:text-lg font-medium text-shark-900 pb-5'>En conclusión, la compra de una vivienda es una decisión importante que requiere de tiempo, paciencia y una buena planificación. Con estos consejos, estarás más preparado para realizar una elección acertada y hacer de tu hogar un espacio cómodo y seguro.</p>
                 </div>
-                <div id='contact' >
+                <div id='contact' className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
                     <ContactForm />
+                    <Ubication 
+                            nameUbication={oficinaPrincipal.nameUbication} 
+                            linkDirection={oficinaPrincipal.linkDirection}
+                            direction={oficinaPrincipal.direction} 
+                            city={oficinaPrincipal.city}
+                            refPhone={oficinaPrincipal.refPhone}
+                            phone={oficinaPrincipal.phone}
+                            iframe={oficinaPrincipal.iframe}
+                            />
                 </div>
             </div>
             <Footer />

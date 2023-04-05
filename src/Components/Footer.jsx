@@ -6,15 +6,15 @@ export function Footer() {
 
   return (
     <footer className="pt-10 pb-6 bg-shark-900">
-      <div className="mx-auto max-w-7xl px-6 xl:px-6">
+      <div className="mx-auto max-w-7xl px-4 xl:px-6">
         <div className="m-auto">
           <div className="grid grid-cols-5">
             <div className='col-span-5 lg:col-span-1'>
-                <a href="#home" aria-label="logo" className="flex space-x-2 items-center justify-center">
+                <Link to="/" aria-label="logo" className="flex space-x-2 items-center pb-4">
                     <div aria-hidden="true" className="flex space-x-1">
                         <img src={Logo} alt="logo" className="h-10"></img>
                     </div>
-                </a>
+                </Link>
             </div>
             <div className="text-gray-600 dark:text-gray-300 col-span-5 lg:col-span-1 py-2">
                 <h3 className='font-bold text-white text-3xl'>Oficina</h3> 
@@ -67,7 +67,7 @@ export function Footer() {
                 <ul role="list" className="flex items-center">    
                     <li>
                         <a
-                        href="#"
+                        href="https://www.facebook.com/ImpulsaColombia"
                         className="flex items-center space-x-2 px-2 transition text-white hover:text-amber-500"
                         target='_blank'
                         >
@@ -87,7 +87,7 @@ export function Footer() {
 
                     <li>
                         <a
-                        href="#"
+                        href="https://www.linkedin.com/in/impulsa-colombia-5b27a5185/?originalSubdomain=co"
                         className="flex items-center space-x-2 px-2 transition text-white hover:text-amber-500"
                         target='_blank'
                         >

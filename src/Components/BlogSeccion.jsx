@@ -11,22 +11,20 @@ export function BlogSection() {
       image: bannerMiCasaYa,
       title: 'Subsidio de Mi casa ya en 2022',
       description: '¿Qué es Mi casa ya? Es un programa del gobierno nacional que facilita el acceso a la compra de una primera vivienda para […]',
-      link: '/blog-mi-casa-ya',
+      link: 'subsidio-mi-casa-ya',
     },
     {
       image: bannerConsejos,
       title: 'Consejos para comprar vivienda nueva',
       description: 'Actualmente la oferta de vivienda se ha ampliado en el territorio nacional, sin embargo, en muchos casos no se está seguro de la […]',
-      link: '/blog-comprar-vivienda-nueva',
+      link: 'consejos-para-comprar-vivienda',
     },
     
   ];
 
   return (
-    <div className="container mx-auto py-12">
-        <p className=' text-lg md:text-xl font-bold text-amber-600'>Sala de </p>
-        <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Prensa</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+    <div className="container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center pb-12">
         {blogs.map((blog, index) => (
           <div key={index}>
             <CardBlog image={blog.image} title={blog.title} description={blog.description} />

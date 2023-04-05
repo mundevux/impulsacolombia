@@ -7,8 +7,10 @@ import { CerasusUsme } from '../pages/CerasusUsme';
 import { CerasusSextaEntrada } from '../pages/CerasusSextaEntrada';
 import { AviumTunja } from '../pages/AviumTunja';
 import { PrunusSextaEntrada } from '../pages/PrunusSextaEntrada';
+import { Blog } from '../pages/Blog';
 import { BlogMiCasaYa } from '../pages/BlogMiCasaYa';
 import { BlogComprarViviendaNueva } from '../pages/BlogComprarViviendaNueva';
+import { AboutUs } from '../pages/AboutUs';
 
 
 export function RoutesApp() {
@@ -23,8 +25,11 @@ export function RoutesApp() {
         <Route path="/cerasus-sexta-entrada" element={<CerasusSextaEntrada />} />
         <Route path="/avium-tunja" element={<AviumTunja />} />
         <Route path="/prunus-sexta-entrada" element={<PrunusSextaEntrada />} />
-        <Route path="/blog-mi-casa-ya" element={<BlogMiCasaYa />} />
-        <Route exact path="/blog-comprar-vivienda-nueva" element={<BlogComprarViviendaNueva />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/subsidio-mi-casa-ya" element={<BlogMiCasaYa />} />
+        <Route  path="/consejos-para-comprar-vivienda" element={<BlogComprarViviendaNueva />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+
 
         <Route path="*" element={<h1>404: Not Found</h1>} />
       </Routes>

@@ -72,9 +72,9 @@ export function Header() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <a href="#aboutus" className="block md:px-4 transition text-base text-white hover:text-amber-500">
+                                        <Link to="/aboutus" className="block md:px-4 transition text-base text-white hover:text-amber-500">
                                             <span>Nosotros</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button className="block md:px-4 transition text-base text-white hover:text-amber-500" onClick={() => setIsOpen(!isOpen)}>
@@ -94,9 +94,9 @@ export function Header() {
                                         )}
                                     </li>
                                     <li>
-                                        <a href="#blog" className="block md:px-4 transition text-base text-white hover:text-amber-500">
+                                        <Link to="/blog" className="block md:px-4 transition text-base text-white hover:text-amber-500">
                                             <span>Blog</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

@@ -10,29 +10,61 @@ import { Footer } from '../Components/Footer';
 import { CarouselProjects } from '../Components/CarouselProjects';  
 import { BlogSection } from '../Components/BlogSeccion';
 import { ContactForm } from '../Components/ContactForm';
+import  Counter from '../Components/Counter';
+import Iframe from 'react-iframe';
+import Ubication from '../Components/Ubication';
 
 
 export function Home() {
 
+    const oficinaPrincipal = {
+        nameUbication: 'Oficina Principal',
+        linkDirection: 'https://goo.gl/maps/Txs3cUnbB4SzWqb58',
+        direction: 'Calle 98 # 8- 37',
+        city: 'Bogotá, Colombia',
+        refPhone: 'tel:+576017942134',
+        phone: '(601) 794 2134',
+        iframe: <Iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
+                    className='w-full h-full rounded-md'
+                    frameBorder="0"
+                    loading='lazy'
+                    allowFullScreen
+                /> ,
+    }
+
     return(
         <div className=' bg-shark-900'>
             <Header />
-            <div  className='max-w-7xl mx-auto pt-32 px-6 xl:px-6'>
-                <div className='flex flex-col md:flex-row justify-center items-center'>
-                    <div className='flex flex-col justify-center items-start'>
-                        <h1 className='text-4xl md:text-5xl font-bold text-white'>IMPULSA EN EL MUNDO</h1>
-                        <p className='text-shark-300 text-sm md:text-base font-normal pt-5'>
-                            Impulsa Colombia forma parte de un grupo Internacional de empresas formado por un equipo de más de 80 personas que dan vida a la filosofía de la empresa en Colombia, España y Perú: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
+            <div  className='max-w-7xl mx-auto pt-32 px-4 xl:px-6'>
+                <div className='flex flex-col justify-around items-center'>
+                    <div className='flex flex-col justify-center items-start col-span-1 md:col-span-2 w-full'>
+                        <h1 className='text-4xl md:text-6xl font-bold text-white text-center w-full pt-10'>IMPULSA EN EL MUNDO</h1>
+                        <p className='text-shark-300 text-base md:text-xl font-normal py-5 text-center'>
+                            Impulsa Colombia forma parte de un grupo Internacional de empresas formado por un equipo de más de 80 personas que dan vida a la filosofía de la compañia: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
                         </p>
-                        <div>
-
+                        <div className='w-full flex flex-col justify-center items-center'>
+                            <div className='py-5'>
+                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3'>Viviendas entregadas en el mundo</h2>
+                                <p className="text-xl md:text-3xl font-bold text-center text-amber-400 pb-2">Más de 18 mil viviendas</p>
+                            </div>
+                            <div>
+                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3'>Viviendas entregadas en España</h2>
+                                <Counter end={17610} />
+                            </div>
+                            <div>
+                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3'>Viviendas entregadas en Colombia</h2>
+                                <Counter end={866} />
+                            </div>
                         </div>
                     </div>
-                    <div className='flex justify-center items-center'>
-                        <div className=' bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 rounded-t-full rounded-b-[73rem]'>
-                            <img src={Referencia} loading="lazy" className='p-5 rounded-t-full rounded-b-[73rem]'></img>
+                    { /* 
+                    <div className='flex justify-center items-center col-span-1 md:col-span-2'>
+                        <div className=' bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 rounded-t-full rounded-b-[73rem] h-[400px] md:h-[800px] object-cover'>
+                            <img src={Referencia} loading="lazy" className='p-5 rounded-t-full rounded-b-[73rem] h-full object-cover'></img>
                         </div>
                     </div>
+                    */ }
                 </div>
                 <div className="mt-12 grid grid-cols-3 sm:grid-cols-5 bg-white rounded-t-md bor py-12">
                     <div className="col-span-5 lg:col-span-1 p-4 grayscale transition duration-200 hover:grayscale-0">
@@ -63,14 +95,29 @@ export function Home() {
                 </div>
             </div>
             <div className='pt-28 pb-12 bg-white'>
-                <div id='projects' className='max-w-7xl mx-auto px-6 xl:px-6'>
+                <div id='projects' className='max-w-7xl mx-auto px-4 xl:px-6'>
                     <CarouselProjects />
                 </div>
-                <div id='blog' className='max-w-7xl mx-auto px-6 xl:px-6'>
+                <div id='blog' className='max-w-7xl mx-auto px-4 xl:px-6 py-12' >
+                    <p className=' text-lg md:text-xl font-bold text-amber-600'>Sala de </p>
+                    <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Prensa</h1>
                     <BlogSection />
                 </div>
-                <div id='contact' className='max-w-7xl mx-auto px-6 xl:px-6'>
-                    <ContactForm />
+                <div id='contact' className='max-w-7xl mx-auto px-4 xl:px-6'>
+                    <p className=' text-lg md:text-xl font-bold text-amber-600'>Hablemos</p>
+                    <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Es fácil contactarnos</h1>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                        <ContactForm />
+                        <Ubication 
+                            nameUbication={oficinaPrincipal.nameUbication} 
+                            linkDirection={oficinaPrincipal.linkDirection}
+                            direction={oficinaPrincipal.direction} 
+                            city={oficinaPrincipal.city}
+                            refPhone={oficinaPrincipal.refPhone}
+                            phone={oficinaPrincipal.phone}
+                            iframe={oficinaPrincipal.iframe}
+                            />
+                    </div>
                 </div>
             </div>
 

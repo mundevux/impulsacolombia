@@ -4,7 +4,6 @@ import LogoAlianza from '/src/assets/img/Logo_Alianza.png';
 import LogoBancodeBogota from '/src/assets/img/Logo_Banco_de_Bogota.png';
 import LogoScotiabank from '/src/assets/img/Logo_Scotiabank.png';
 import LogoCredicorp from '/src/assets/img/Logo_Credicorp.svg';
-import Referencia from '/src/assets/img/referencia.jpg';
 import { Header } from '../Components/Header';
 import { Footer } from '../Components/Footer';
 import { CarouselProjects } from '../Components/CarouselProjects';  
@@ -54,9 +53,9 @@ export function Home() {
             <div  className='max-w-7xl mx-auto pt-32 px-4 xl:px-6'>
                 <div className='flex flex-col justify-around items-center'>
                     <div className='flex flex-col justify-center items-start col-span-1 md:col-span-2 w-full'>
-                        <h1 className='text-4xl md:text-6xl font-bold text-white text-center w-full pt-10'>IMPULSA EN EL MUNDO</h1>
+                        <h1 className='text-4xl md:text-6xl font-bold text-white text-center w-full md:pt-10'>IMPULSA EN EL MUNDO</h1>
                         <p className='text-shark-300 text-base md:text-xl font-normal py-5 text-center'>
-                            Impulsa Colombia forma parte de un grupo Internacional de empresas formado por un equipo de profesionales que dan vida a la filosofía de la compañia: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
+                            Impulsa Colombia forma parte de un grupo Internacional de empresas conformado por un equipo de profesionales que dan vida a la filosofía de la compañía: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
                         </p>
                         <div className='w-full flex flex-col justify-center items-center'>
                             <div className='py-5'>
@@ -110,9 +109,13 @@ export function Home() {
                 </div>
             </div>
             <div className='pt-28 pb-12 bg-white'>
-                <div id='projects' className='max-w-7xl mx-auto px-4 xl:px-6'>
-                    <CarouselProjects />
-                </div>
+                    <div id='projects' className='max-w-7xl mx-auto px-4 xl:px-6'>
+                        <div className='flex flex-col'>
+                            <p className=' text-xl md:text-2xl font-bold text-amber-600'>Nuestros </p>
+                            <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
+                        </div>
+                        <CarouselProjects />
+                    </div>
                 <div id='blog' className='max-w-7xl mx-auto px-4 xl:px-6 py-12' >
                     <p className=' text-xl md:text-2xl font-bold text-amber-600'>Sala de </p>
                     <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Prensa</h1>

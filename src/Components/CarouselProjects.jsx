@@ -4,8 +4,8 @@ import CardProjects from './CardProjects';
 
 import logoMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png';
 import fachadaMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg';
-import logoDanubio from '/src/assets/img/Creasus_Danubio/Logo_Cerasus_Danubio.png';
-import fachadaDanubio from '/src/assets/img/Creasus_Danubio/Fachada_Cerasus_Danubio.png';
+import logoDanubio from '/src/assets/img/Cerasus_Danubio/Logo_Cerasus_Danubio.png';
+import fachadaDanubio from '/src/assets/img/Cerasus_Danubio/Fachada_Cerasus_Danubio.png';
 import logoUsme from '/src/assets/img/Cerasus_Usme/Logo_Cerasus_Usme.png';
 import fachadaUsme from '/src/assets/img/Cerasus_Usme/Fachada_Cerasus_Usme.jpg';
 import logoTunja from '/src/assets/img/Avium_Tunja/Logo_Avium_Tunja.png';
@@ -95,11 +95,7 @@ export function CarouselProjects() {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className='flex flex-col'>
-        <p className=' text-xl md:text-2xl font-bold text-amber-600'>Nuestros </p>
-        <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
-      </div>
+    <div className="max-w-screen-xl mx-auto">
       <Slider {...settings}>
         {projectsData.map((projectsData, index) => (
           <div key={index} className="px-2 my-4">

@@ -11,6 +11,7 @@ import { Blog } from '../pages/Blog';
 import { BlogMiCasaYa } from '../pages/BlogMiCasaYa';
 import { BlogComprarViviendaNueva } from '../pages/BlogComprarViviendaNueva';
 import { AboutUs } from '../pages/AboutUs';
+import { NotFound } from '../pages/NotFound';
 
 
 export function RoutesApp() {
@@ -31,7 +32,7 @@ export function RoutesApp() {
         <Route path="/aboutus" element={<AboutUs />} />
 
 
-        <Route path="*" element={<h1>404: Not Found</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

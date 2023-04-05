@@ -1,8 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Footer } from "../Components/Footer";
 import { Header } from "../Components/Header";
 import { ContactForm } from "../Components/ContactForm";
-import Slider from 'react-slick';
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
 import { Carousel } from 'flowbite-react';
@@ -147,7 +146,7 @@ export function CerasusMonteblanco(){
                     No esperes más para tener <span className="text-amber-500">la vida que siempre has querido</span> y hacer realidad tus sueños de tener una casa propia. ¡Visítanos y descubre todo lo que Cerasus Monteblanco tiene para ofrecer!
                 </p>
                 <h2 className=' text-2xl md:text-4xl font-bold text-amber-400 pt-4 text-center'>Características</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-around w-full pb-5 px-6">
+                <div className="flex flex-auto flex-wrap items-center justify-around w-full pb-5 px-6">
                     {
                         features.map((feature, index) => (
                             <div key={index}>

@@ -11,13 +11,13 @@ export function BlogSection() {
       image: bannerMiCasaYa,
       title: 'Subsidio de Mi casa ya en 2022',
       description: '¿Qué es Mi casa ya? Es un programa del gobierno nacional que facilita el acceso a la compra de una primera vivienda para […]',
-      link: 'subsidio-mi-casa-ya',
+      link: '/blog/subsidio-mi-casa-ya',
     },
     {
       image: bannerConsejos,
       title: 'Consejos para comprar vivienda nueva',
       description: 'Actualmente la oferta de vivienda se ha ampliado en el territorio nacional, sin embargo, en muchos casos no se está seguro de la […]',
-      link: 'consejos-para-comprar-vivienda',
+      link: '/blog/consejos-para-comprar-vivienda',
     },
     
   ];

@@ -1,10 +1,12 @@
+import React, { useRef } from 'react';
 import { Footer } from "../Components/Footer";
 import { Header } from "../Components/Header";
-import ImageGallery from "../Components/ImageGallery";
 import { ContactForm } from "../Components/ContactForm";
+import Slider from 'react-slick';
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
-
+import { Carousel } from 'flowbite-react';
+import PropertiesOfProjects from "../Components/PropertiesOfProjects";
 import logoCerasusMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png'
 import fachadaCerasusMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg'
 import renderMonteblanco1 from '/src/assets/img/Cerasus_Monteblanco/Monteblanco_nuevo_proyecto_VIS_bicicletero.jpg'
@@ -14,11 +16,13 @@ import salonSocial from '/src/assets/img/Cerasus_Monteblanco/Salon-social-aparta
 import ludoteca from '/src/assets/img/Cerasus_Monteblanco/Ludoteca-apartamento.png'
 import gimnasio from '/src/assets/img/Cerasus_Monteblanco/Gimnasio-apartamento.png'
 import businessCenter from '/src/assets/img/Cerasus_Monteblanco/Business-center-apartamento.png'
-import PropertiesOfProjects from "../Components/PropertiesOfProjects";
+import iconWaze from '/src/assets/img/iconWaze.png'
+import iconMaps from '/src/assets/img/iconMaps.png'
 
 
 export function CerasusMonteblanco(){
 
+   
     const salaDeVentas = {
         nameUbication: 'Sala de Ventas Cerasus Monteblanco',
         linkDirection: 'https://goo.gl/maps/P4QVWpA8YktM7oT3A',
@@ -26,10 +30,18 @@ export function CerasusMonteblanco(){
         city: 'Bogotá, Colombia',
         refPhone: 'tel:+573023399804',
         phone: '(302) 339 9804',
+        textWhatsApp: 'WhatsApp: ',
         refWhatsApp: 'https://wa.me/573023399804',
         whatsapp: '(302) 339 9804',
+        textEmail: 'Email: ',
         refEmail: 'mailto:ventas@cerasusmonteblanco.com',
         email: 'ventas@cerasusmonteblanco.com',
+        imageWaze: iconWaze,
+        refWaze: 'https://www.waze.com/en/live-map/directions/co/bogota/bogota/cerasus-danubio?place=ChIJ64X1ewSiP44RYGabeP9Y-VI',
+        textWaze: 'Llega con Waze',
+        imageMaps: iconMaps,
+        refMaps: 'https://goo.gl/maps/U9ButoEEBxfJdnvT8', 
+        textMaps: 'Llega con Maps',   
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.6425980615309!2d-74.11951147924401!3d4.542599976786291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa2047bf585eb%3A0x52f958ff789b6660!2scerasus%20danubio!5e0!3m2!1ses!2sco!4v1680648024910!5m2!1ses!2sco"
                     className='w-full h-full rounded-md'
@@ -86,7 +98,7 @@ export function CerasusMonteblanco(){
         <div>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">
-                <img src={fachadaCerasusMonteblanco} alt="Fachada Conjunto Residencial Cerasus Monteblanco apartamentos Vis en Bogotá" className="w-full h-96 object-cover rounded-lg shadow shadow-shark-500/40 transition-all duration-500 cursor-pointer filter grayscale hover:grayscale-0" />
+                <img src={fachadaCerasusMonteblanco} alt="Fachada Conjunto Residencial Cerasus Monteblanco apartamentos Vis en Bogotá" className="w-full h-96 object-cover rounded-lg shadow " />
                 <div className="flex justify-center items-center -mt-28 relative z-10 pb-6">
                     <img src={logoCerasusMonteblanco} alt="Logo Conjunto Residencial Cerasus Monteblanco apartamentos Vis en Bogotá" className=" w-52 h-52 rounded-full object-cover border-[1px] border-shark-600 shadow shadow-shark-500/40" />
                 </div>
@@ -108,7 +120,7 @@ export function CerasusMonteblanco(){
                     </div>
                 </div>
                 <div className="w-full h-1 bg-amber-300 rounded-sm mt-4 mb-10"></div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-5 ">
                     <div className="flex flex-col items-center ">
                         <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
                             ¿Estás buscando una <span className="text-amber-500">vivienda asequible</span> y de <span className="text-amber-500">alta calidad</span> en una zona tranquila? ¡Cerasus Monteblanco es el lugar perfecto para ti!
@@ -120,7 +132,13 @@ export function CerasusMonteblanco(){
                             Además, el proyecto cuenta con una serie de comodidades para que <span className="text-amber-500">disfrutes de tu hogar al máximo</span>. El salón comunal es el lugar perfecto para celebrar reuniones con tus amigos y familiares, mientras que la zona BBQ te permite disfrutar de deliciosas comidas al aire libre. Para aquellos que quieren mantenerse en forma, el gimnasio ofrece una amplia variedad de equipos para entrenar.
                         </p> 
                     </div>    
-                    <ImageGallery images={imageProject} />
+                    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 shadow-lg">
+                        <Carousel>
+                            {imageProject.map((image, index) => (
+                                <img key={index} src={image.src} alt={image.alt} className="w-full h-full object-cover rounded-lg shadow" />
+                            ))}
+                        </Carousel>
+                    </div>
                 </div>
                 <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
                     En Cerasus Monteblanco, no solo tendrás un hogar cómodo y funcional, sino que también estarás ubicado en una <span className="text-amber-500">zona privilegiada</span>. La ubicación del proyecto ha sido elegida cuidadosamente para ofrecerte una vida tranquila y segura, pero al mismo tiempo, cerca de todo lo que necesitas.
@@ -150,10 +168,18 @@ export function CerasusMonteblanco(){
                             city={salaDeVentas.city}
                             refPhone={salaDeVentas.refPhone}
                             phone={salaDeVentas.phone}
+                            textWhatsapp={salaDeVentas.textWhatsapp}
                             refWhatsApp={salaDeVentas.refWhatsApp}
                             whatsapp={salaDeVentas.whatsapp}
                             refEmail={salaDeVentas.refEmail}
+                            textEmail={salaDeVentas.textEmail}
                             email={salaDeVentas.email}
+                            iconWaze={salaDeVentas.imageWaze}
+                            wazeLink={salaDeVentas.refWaze}
+                            textWaze={salaDeVentas.textWaze}
+                            iconMaps={salaDeVentas.imageMaps}
+                            mapsLink={salaDeVentas.refMaps}
+                            textMaps={salaDeVentas.textMaps}
                             iframe={salaDeVentas.iframe}
                             />
                     </div>

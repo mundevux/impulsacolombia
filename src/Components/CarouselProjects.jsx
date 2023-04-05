@@ -97,7 +97,7 @@ export function CarouselProjects() {
   return (
     <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className='flex flex-col'>
-        <p className=' text-lg md:text-xl font-bold text-amber-600'>Nuestros </p>
+        <p className=' text-xl md:text-2xl font-bold text-amber-600'>Nuestros </p>
         <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Proyectos</h1>
       </div>
       <Slider {...settings}>

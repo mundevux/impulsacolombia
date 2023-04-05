@@ -99,7 +99,7 @@ export function Footer() {
           </div>
           <div className='text-center mt-4 border-t-2  border-primary dark:border-secondary'>
             <span className="block text-gray-500 dark:text-gray-400 pt-4">
-              Copyright &copy; <span id="year">2023</span> by <a href="https://codcreativo.com/">Código Creativo</a>. All rights reserved.
+              Copyright &copy; <span id="year">2023</span> by <a href="https://codcreativo.com/" target='_blank'>Código Creativo</a>. All rights reserved.
             </span>
           </div>
         </div>

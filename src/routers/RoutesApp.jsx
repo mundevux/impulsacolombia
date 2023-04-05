@@ -26,8 +26,8 @@ export function RoutesApp() {
         <Route path="/avium-tunja" element={<AviumTunja />} />
         <Route path="/prunus-sexta-entrada" element={<PrunusSextaEntrada />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/subsidio-mi-casa-ya" element={<BlogMiCasaYa />} />
-        <Route  path="/consejos-para-comprar-vivienda" element={<BlogComprarViviendaNueva />} />
+        <Route path="/blog/:subsidio-mi-casa-ya" element={<BlogMiCasaYa />} />
+        <Route  path="/blog/:consejos-para-comprar-vivienda" element={<BlogComprarViviendaNueva />} />
         <Route path="/aboutus" element={<AboutUs />} />
 
 

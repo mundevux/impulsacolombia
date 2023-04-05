@@ -5,6 +5,8 @@ import Iframe from "react-iframe";
 import Ubication from "../Components/Ubication";
 import bannerConsejos from '/src/assets/img/Blog/Consejos_Vivienda_Nueva/consejos-para-comprar-vivienda-nueva.jpg';
 import bannerComprar from '/src/assets/img/Blog/Consejos_Vivienda_Nueva/comprar-vivienda-nueva.jpg'
+import iconWaze from '/src/assets/img/iconWaze.png'
+import iconMaps from '/src/assets/img/iconMaps.png'
 
 export function BlogComprarViviendaNueva() {
 
@@ -15,10 +17,18 @@ export function BlogComprarViviendaNueva() {
         city: 'Bogotá, Colombia',
         refPhone: 'tel:+576017942134',
         phone: '(601) 794 2134',
+        textWhatsapp: 'WhatsApp: ',
         refWhatsApp: 'https://wa.me/573176676375',
         whatsapp: '(317) 667 6375',
+        textEmail: 'Email: ',
         refEmail: 'mailto:info@impulsacolombia.com.co',
         email: 'info@impulsacolombia.com.co',
+        imageWaze: iconWaze,
+        refWaze: 'https://www.waze.com/en/live-map/directions/co/bogota/cl.-98-8-37?place=ChIJDXldaZqaP44RJNHVPhzOm4w',
+        textWaze: 'Llega con Waze',
+        imageMaps: iconMaps,
+        refMaps: 'https://goo.gl/maps/h9A4sjJeCFWT8QP79', 
+        textMaps: 'Llega con Maps',
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
                     className='w-full h-full rounded-md'
@@ -83,11 +93,19 @@ export function BlogComprarViviendaNueva() {
                             direction={oficinaPrincipal.direction} 
                             city={oficinaPrincipal.city}
                             refPhone={oficinaPrincipal.refPhone}
+                            textWhatsapp={oficinaPrincipal.textWhatsapp}
                             phone={oficinaPrincipal.phone}
                             refWhatsApp={oficinaPrincipal.refWhatsApp}
                             whatsapp={oficinaPrincipal.whatsapp}
+                            textEmail={oficinaPrincipal.textEmail}
                             refEmail={oficinaPrincipal.refEmail}
-                            email={oficinaPrincipal.email}   
+                            email={oficinaPrincipal.email}  
+                            iconWaze={oficinaPrincipal.imageWaze}
+                            wazeLink={oficinaPrincipal.refWaze}
+                            textWaze={oficinaPrincipal.textWaze}
+                            iconMaps={oficinaPrincipal.imageMaps}
+                            mapsLink={oficinaPrincipal.refMaps}
+                            textMaps={oficinaPrincipal.textMaps}  
                             iframe={oficinaPrincipal.iframe}
                             />
                 </div>

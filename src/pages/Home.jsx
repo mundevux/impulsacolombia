@@ -13,6 +13,9 @@ import { ContactForm } from '../Components/ContactForm';
 import  Counter from '../Components/Counter';
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
+import iconWaze from '/src/assets/img/iconWaze.png'
+import iconMaps from '/src/assets/img/iconMaps.png'
+
 
 
 export function Home() {
@@ -24,10 +27,18 @@ export function Home() {
         city: 'Bogotá, Colombia',
         refPhone: 'tel:+576017942134',
         phone: '(601) 794 2134',
+        textWhatsapp: 'WhatsApp: ',
         refWhatsApp: 'https://wa.me/573176676375',
         whatsapp: '(317) 667 6375',
+        textEmail: 'Email: ',
         refEmail: 'mailto:info@impulsacolombia.com.co',
         email: 'info@impulsacolombia.com.co',
+        imageWaze: iconWaze,
+        refWaze: 'https://www.waze.com/en/live-map/directions/co/bogota/cl.-98-8-37?place=ChIJDXldaZqaP44RJNHVPhzOm4w',
+        textWaze: 'Llega con Waze',
+        imageMaps: iconMaps,
+        refMaps: 'https://goo.gl/maps/h9A4sjJeCFWT8QP79', 
+        textMaps: 'Llega con Maps',  
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
                     className='w-full h-full rounded-md'
@@ -45,7 +56,7 @@ export function Home() {
                     <div className='flex flex-col justify-center items-start col-span-1 md:col-span-2 w-full'>
                         <h1 className='text-4xl md:text-6xl font-bold text-white text-center w-full pt-10'>IMPULSA EN EL MUNDO</h1>
                         <p className='text-shark-300 text-base md:text-xl font-normal py-5 text-center'>
-                            Impulsa Colombia forma parte de un grupo Internacional de empresas formado por un equipo de más de 80 personas que dan vida a la filosofía de la compañia: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
+                            Impulsa Colombia forma parte de un grupo Internacional de empresas formado por un equipo de profesionales que dan vida a la filosofía de la compañia: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
                         </p>
                         <div className='w-full flex flex-col justify-center items-center'>
                             <div className='py-5'>
@@ -103,12 +114,12 @@ export function Home() {
                     <CarouselProjects />
                 </div>
                 <div id='blog' className='max-w-7xl mx-auto px-4 xl:px-6 py-12' >
-                    <p className=' text-lg md:text-xl font-bold text-amber-600'>Sala de </p>
+                    <p className=' text-xl md:text-2xl font-bold text-amber-600'>Sala de </p>
                     <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Prensa</h1>
                     <BlogSection />
                 </div>
                 <div id='contact' className='max-w-7xl mx-auto px-4 xl:px-6'>
-                    <p className=' text-lg md:text-xl font-bold text-amber-600'>Hablemos</p>
+                    <p className=' text-xl md:text-2xl font-bold text-amber-600'>Hablemos</p>
                     <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5 mb-12'>Es fácil contactarnos</h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <ContactForm />
@@ -119,10 +130,18 @@ export function Home() {
                             city={oficinaPrincipal.city}
                             refPhone={oficinaPrincipal.refPhone}
                             phone={oficinaPrincipal.phone}
+                            textWhatsapp={oficinaPrincipal.textWhatsapp}
                             refWhatsApp={oficinaPrincipal.refWhatsApp}
                             whatsapp={oficinaPrincipal.whatsapp}
                             refEmail={oficinaPrincipal.refEmail}
-                            email={oficinaPrincipal.email}                            
+                            textEmail={oficinaPrincipal.textEmail}
+                            email={oficinaPrincipal.email}
+                            iconWaze={oficinaPrincipal.imageWaze}
+                            wazeLink={oficinaPrincipal.refWaze}
+                            textWaze={oficinaPrincipal.textWaze}
+                            iconMaps={oficinaPrincipal.imageMaps}
+                            mapsLink={oficinaPrincipal.refMaps}
+                            textMaps={oficinaPrincipal.textMaps}                         
                             iframe={oficinaPrincipal.iframe}
                             />
                     </div>

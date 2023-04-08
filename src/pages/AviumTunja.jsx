@@ -5,6 +5,7 @@ import { ContactForm } from "../Components/ContactForm";
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
 import { Carousel } from 'flowbite-react';
+import { Helmet } from 'react-helmet';
 import PropertiesOfProjects from "../Components/PropertiesOfProjects";
 import iconWaze from '/src/assets/img/iconWaze.png'
 import iconMaps from '/src/assets/img/iconMaps.png'
@@ -125,6 +126,11 @@ export function AviumTunja(){
 
     return(
         <div>
+            <Helmet>
+                <title>Avium Tunja | Apartamentos con piscina en Tunja</title>
+                <meta name="description" content="Conjunto Residencial Avium Tunja, apartamentos con piscina en Tunja, Boyacá. Conoce más sobre este proyecto de apartamentos en Tunja, Boyacá." />
+
+            </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">
                 <img src={fachadaTunja} alt="Fachada Conjunto Residencial Avium Tunja apartamentos con piscina en Tunja" className="w-full h-96 object-cover rounded-lg shadow " />
@@ -151,8 +157,8 @@ export function AviumTunja(){
                 <div className="w-full h-1 bg-amber-300 rounded-sm mt-4 mb-10"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-5 ">
                     <div className="flex flex-col items-center ">
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                        Avium Tunja es proyecto de vivienda de estrato 3 que está construido en la calle 18 No. 1-140 del sector del Rodeo en la ciudad de Tunja. Cuenta con una <span className="text-amber-500">ubicación privilegiada</span> ya que se encuentra cerca al centro comercial Unicentro, a la nueva terminal de transporte, al Batallón Bolívar, a la Avenida Universitaria y a la Avenida Oriental. Un total de 408 apartamentos distribuidos en <span className="text-amber-500">4 torres de 8 apartamentos</span> por piso, dos de ellas con una altura de 11 pisos y las otras dos de 16 pisos, cada una con 2 ascensores.
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
+                            Avium Tunja es proyecto de vivienda de estrato 3 que está construido en la calle 18 No. 1-140 del sector del Rodeo en la ciudad de Tunja. Cuenta con una <span className="text-amber-500">ubicación privilegiada</span> ya que se encuentra cerca al centro comercial Unicentro, a la nueva terminal de transporte, al Batallón Bolívar, a la Avenida Universitaria y a la Avenida Oriental. Un total de 408 apartamentos distribuidos en <span className="text-amber-500">4 torres de 8 apartamentos</span> por piso, dos de ellas con una altura de 11 pisos y las otras dos de 16 pisos, cada una con 2 ascensores.
                         </p>
                     </div>    
                     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 shadow-lg">
@@ -178,18 +184,18 @@ export function AviumTunja(){
                 <div>
                     <p className=' text-lg md:text-xl font-bold text-amber-500'>Nuestras</p>
                     <h1 className='text-4xl md:text-5xl font-bold text-shark-900 -mt-2 -ml-0.5'>Tipologías</h1>
-                    <div className='grid grid-cols-3 gap-4 my-12'>
-                        <div className='flex flex-col items-center'>
+                    <div className='grid grid-cols-3 gap-6 justify-center items-center flex-wrap my-12'>
+                        <div className='flex flex-col items-center col-span-3 lg:col-span-1 my-5'>
                             <img className=' w-full  h-80 rounded-lg object-cover border-shark-600 shadow shadow-shark-500/40 mb-4' src={aptoTipoA} alt='Apartamento tipo A del Conjunto Avium Tunja' />
                             <h2 className='text-xl md:text-2xl font-bold text-amber-500 mb-4'>Apartamentos Tipo A</h2>
                             <p className='text-lg md:text-xl font-bold text-shark-900 text-center'>Apatamentos de 55m2 con 3 Habitaciones, 2 baños, sala comedor, cocina, zona de ropas y parqueadero</p>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center col-span-3 lg:col-span-1 my-5'>
                             <img className=' w-full  h-80 rounded-lg object-cover border-shark-600 shadow shadow-shark-500/40 mb-4' src={aptoTipoB} alt='Apartamento tipo A del Conjunto Avium Tunja' />
                             <h2 className='text-xl md:text-2xl font-bold text-amber-500 mb-4'>Apartamentos Tipo B</h2>
                             <p className='text-lg md:text-xl font-bold text-shark-900 text-center'>Apatamentos de 54m2 con 3 Habitaciones, 2 baños, sala comedor, cocina, zona de ropas y parqueadero</p>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center col-span-3 lg:col-span-1 my-5'>
                             <img className=' w-full h-80 rounded-lg object-cover border-shark-600 shadow shadow-shark-500/40 mb-4' src={aptoTipoC} alt='Apartamento tipo A del Conjunto Avium Tunja' />
                             <h2 className='text-xl md:text-2xl font-bold text-amber-500 mb-4'>Apartamentos Tipo C</h2>
                             <p className='text-lg md:text-xl font-bold text-shark-900 text-center'>Apatamentos de 47m2 con 2 Habitaciones, 2 baños, sala comedor, cocina, zona de ropas y parqueadero</p>

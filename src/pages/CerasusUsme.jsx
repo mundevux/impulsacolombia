@@ -143,13 +143,13 @@ export function CerasusUsme(){
                 <div className="w-full h-1 bg-amber-300 rounded-sm mt-4 mb-10"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-5 ">
                     <div className="flex flex-col items-center ">
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                             Cerasus Usme es un proyecto de vivienda VIP (interés prioritario) que construimos en la Calle 110 A Sur No 3 A- 40 del barrio Villa Israel de la Localidad de Usme. Cuenta con una ubicación privilegiada ya que se encuentra a 70 metros de la avenida al Llano y a unos 600 metros de la Avenida Caracas; además goza de cercanía a una extensa zona verde como lo es el parque Villa Alemana.
                         </p>
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                             Este proyecto de vivienda VIP se desarrollo en un lote de terreno de 6.925,61 m² el cual cuenta con dos etapas construidas: la primera de 200 y la segunda de 224, para un total de 424 apartamentos distribuidos en 4 torres de 8 pisos con ascensor, la torre 1 y 2 cuentan con 12 apartamentos por piso y un apartamento dúplex, y la torre 3 y 4 cuentan con 8 apartamentos por piso.
                         </p>
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                             Un edificio de parqueaderos de 3 pisos para un total de 53 parqueaderos comunales, 23 parqueaderos para visitantes, zona de bicicleteros y parque infantil.
                         </p>
                     </div>    

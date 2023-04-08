@@ -20,7 +20,7 @@ export function ContactForm() {
     
   return (
     <div className="container mx-auto">
-            <form className=" bg-white shadow-md rounded-md px-8 pt-6 pb-8 flex flex-col justify-center " onSubmit={handleSubmit}>
+            <form className=" bg-white shadow-xl rounded-md px-8 pt-6 pb-8 flex flex-col justify-center " onSubmit={handleSubmit}>
                 <p className=' text-xl md:text-3xl font-bold text-amber-500 mb-8'>Déjanos tus datos</p>
                 <div className="mb-4">
                     <label htmlFor="name" className="block  text-shark-900 font-medium mb-2">Nombre completo</label>

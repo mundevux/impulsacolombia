@@ -1,23 +1,31 @@
-import React from 'react'
-import LogoImpulsaProyectosInmobiliarios from '/src/assets/img/Logo_Impulsa_Proyectos_Inmobiliarios.png';
-import LogoAlianza from '/src/assets/img/Logo_Alianza.png';
-import LogoBancodeBogota from '/src/assets/img/Logo_Banco_de_Bogota.png';
-import LogoScotiabank from '/src/assets/img/Logo_Scotiabank.png';
-import LogoCredicorp from '/src/assets/img/Logo_Credicorp.svg';
+import React, {useState} from 'react'
 import { Header } from '../Components/Header';
 import { Footer } from '../Components/Footer';
 import { CarouselProjects } from '../Components/CarouselProjects';  
 import { BlogSection } from '../Components/BlogSeccion';
 import { ContactForm } from '../Components/ContactForm';
+import { Helmet } from 'react-helmet';
+import LogoImpulsaProyectosInmobiliarios from '/src/assets/img/Logo_Impulsa_Proyectos_Inmobiliarios.png';
+import LogoAlianza from '/src/assets/img/Logo_Alianza.png';
+import LogoBancodeBogota from '/src/assets/img/Logo_Banco_de_Bogota.png';
+import LogoScotiabank from '/src/assets/img/Logo_Scotiabank.png';
+import LogoCredicorp from '/src/assets/img/Logo_Credicorp.svg';
 import  Counter from '../Components/Counter';
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
 import iconWaze from '/src/assets/img/iconWaze.png'
 import iconMaps from '/src/assets/img/iconMaps.png'
+import Banner from '../Components/Banner';
 
 
 
 export function Home() {
+    
+    const [showBanner, setShowBanner] = useState(true);
+
+    const onClose = () => {
+        setShowBanner(false);
+    }
 
     const oficinaPrincipal = {
         nameUbication: 'Oficina Principal',
@@ -49,25 +57,38 @@ export function Home() {
 
     return(
         <div className=' bg-shark-900'>
+            <Helmet>
+                <title>Impulsa Colombia | Proyectos Inmobiliarios</title>
+                <meta name="description" content="Impulsa Colombia es una empresa de proyectos inmobiliarios que ofrece vivienda de interés social y vivienda de interés prioritario en Colombia, ofreciendo calidad y seguridad a nuestros clientes." />
+                <meta name="keywords" content="Proyectos Inmobiliarios, Vivienda de interés social, Vivienda de interés prioritario, Edificios residenciales en Colombia, Proyectos de vivienda en Colombia" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Impulsa Colombia" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Helmet>
+
             <Header />
+            {showBanner && <Banner onClose={onClose} />}    
             <div  className='max-w-7xl mx-auto pt-32 px-4 xl:px-6'>
                 <div className='flex flex-col justify-around items-center'>
-                    <div className='flex flex-col justify-center items-start col-span-1 md:col-span-2 w-full'>
+                    <div className='flex flex-col justify-center items-start w-full'>
                         <h1 className='text-4xl md:text-6xl font-bold text-white text-center w-full md:pt-10'>IMPULSA EN EL MUNDO</h1>
-                        <p className='text-shark-300 text-base md:text-xl font-normal py-5 text-center'>
-                            Impulsa Colombia forma parte de un grupo Internacional de empresas conformado por un equipo de profesionales que dan vida a la filosofía de la compañía: máxima calidad, profesionalidad, servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos. Esa es nuestra fórmula del éxito.
+                        <p className='text-shark-300 text-base md:text-xl font-normal w-full py-5 text-center'>
+                            Impulsa Colombia forma parte de un grupo Internacional de empresas conformado por un equipo de profesionales que dan vida a la filosofía de la compañía: Máxima Calidad, Profesionalidad, Servicio impecable al cliente y riguroso cumplimiento de los plazos en todas las áreas de trabajo donde participamos.
                         </p>
-                        <div className='w-full flex flex-col justify-center items-center'>
-                            <div className='py-5'>
-                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3 text-center'>Viviendas entregadas en el mundo</h2>
+                        <p className='text-shark-200 text-xl md:text-2xl font-normal w-full py-5 text-center'>
+                            ¡Esa es nuestra fórmula del éxito!
+                        </p>
+                        <div className='w-full grid grid-cols-3 gap-6 justify-center items-center mt-10'>
+                            <div className='col-span3 md:col-span-1'>
+                                <h2 className='text-2xl md:4xl font-semibold text-white pb-3 text-center'>Viviendas entregadas en el mundo</h2>
                                 <p className="text-xl md:text-3xl font-bold text-center text-amber-400 pb-2">Más de 18 mil viviendas</p>
                             </div>
-                            <div>
-                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3 text-center'>Viviendas entregadas en España</h2>
+                            <div className='col-span3 md:col-span-1'>
+                                <h2 className='text-2xl md:4xl font-semibold text-white pb-3 text-center'>Viviendas entregadas en España</h2>
                                 <Counter end={17610} />
                             </div>
-                            <div>
-                                <h2 className='text-2xl md:4xl font-semibold text-shark-100 pb-3 text-center'>Viviendas entregadas en Colombia</h2>
+                            <div className='col-span3 md:col-span-1'>
+                                <h2 className='text-2xl md:4xl font-semibold text-white pb-3 text-center'>Viviendas entregadas en Colombia</h2>
                                 <Counter end={866} />
                             </div>
                         </div>

@@ -121,13 +121,13 @@ export function CerasusMonteblanco(){
                 <div className="w-full h-1 bg-amber-300 rounded-sm mt-4 mb-10"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-5 ">
                     <div className="flex flex-col items-center ">
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                             ¿Estás buscando una <span className="text-amber-500">vivienda asequible</span> y de <span className="text-amber-500">alta calidad</span> en una zona tranquila? ¡Cerasus Monteblanco es el lugar perfecto para ti!
                         </p>
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                             Este proyecto inmobiliario de viviendas de interés social <span className="text-amber-500">(VIS)</span> cuenta con un total de 162 viviendas de 42 mt2 cada una, diseñadas para ofrecer a las familias un <span className="text-amber-500">espacio cómodo</span> y <span className="text-amber-500">funcional</span>. Cada vivienda cuenta con 3 habitaciones, 2 baños, sala, cocina, comedor y cuarto de ropas para satisfacer todas tus necesidades.
                         </p>
-                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                        <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                             Además, el proyecto cuenta con una serie de comodidades para que <span className="text-amber-500">disfrutes de tu hogar al máximo</span>. El salón comunal es el lugar perfecto para celebrar reuniones con tus amigos y familiares, mientras que la zona BBQ te permite disfrutar de deliciosas comidas al aire libre. Para aquellos que quieren mantenerse en forma, el gimnasio ofrece una amplia variedad de equipos para entrenar.
                         </p> 
                     </div>    
@@ -139,10 +139,10 @@ export function CerasusMonteblanco(){
                         </Carousel>
                     </div>
                 </div>
-                <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                     En Cerasus Monteblanco, no solo tendrás un hogar cómodo y funcional, sino que también estarás ubicado en una <span className="text-amber-500">zona privilegiada</span>. La ubicación del proyecto ha sido elegida cuidadosamente para ofrecerte una vida tranquila y segura, pero al mismo tiempo, cerca de todo lo que necesitas.
                 </p>
-                <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
+                <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
                     No esperes más para tener <span className="text-amber-500">la vida que siempre has querido</span> y hacer realidad tus sueños de tener una casa propia. ¡Visítanos y descubre todo lo que Cerasus Monteblanco tiene para ofrecer!
                 </p>
                 <h2 className=' text-2xl md:text-4xl font-bold text-amber-400 pt-4 text-center'>Características</h2>

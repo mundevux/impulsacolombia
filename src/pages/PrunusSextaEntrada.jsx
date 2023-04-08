@@ -10,7 +10,6 @@ import iconWaze from '/src/assets/img/iconWaze.png'
 import iconMaps from '/src/assets/img/iconMaps.png'
 import logoPrunusSextaEntrada from '/src/assets/img/Prunus_Sexta_Entrada/Logo_Prunus_Sexta_Entrada.png';
 import fachadaPrunusSextaEntrada from '/src/assets/img/Prunus_Sexta_Entrada/Fachada_Prunus_Sexta_Entrada.png';
-import { CarouselProjects } from '../Components/CarouselProjects';
 
 export function PrunusSextaEntrada(){
 
@@ -68,10 +67,8 @@ export function PrunusSextaEntrada(){
                     </div>
                 </div>
                 <div className="w-full h-1 bg-amber-300 rounded-sm mt-4 mb-10"></div>
-                <div className='my-10'>
+                <div className='my-32'>
                     <h1 className="text-4xl md:text-8xl font-bold text-shark-900 text-center">Estamos en Construcción</h1>
-                    <h2 className="text-2xl md:text-4xl font-bold text-amber-400 text-center">Aquí puedes ver más proyectos</h2>
-                    <CarouselProjects/>
                 </div>
                 <div id='contact' className='max-w-7xl mx-auto'>
                     <p className=' text-lg md:text-xl font-bold text-amber-600'>Hablemos</p>

@@ -2,9 +2,10 @@ import React from 'react';
 import { Footer } from "../Components/Footer";
 import { Header } from "../Components/Header";
 import { ContactForm } from "../Components/ContactForm";
+import { Carousel } from 'flowbite-react';
+import { Helmet } from 'react-helmet';
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
-import { Carousel } from 'flowbite-react';
 import PropertiesOfProjects from "../Components/PropertiesOfProjects";
 import iconWaze from '/src/assets/img/iconWaze.png'
 import iconMaps from '/src/assets/img/iconMaps.png'
@@ -103,6 +104,10 @@ export function CerasusDanubio(){
 
     return(
         <div>
+            <Helmet>
+                <title>Cerasus Danubio | Vivienda de Interés Social en Bogotá</title>
+                <meta name="description" content="Cerasus Danubio es un conjunto residencial de vivienda de interés social en Bogotá, con apartamentos de 2 y 3 habitaciones, con excelentes acabados y ubicación privilegiada." />
+            </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">
                 <img src={fachadaDanubio} alt="Fachada Conjunto Residencial Cerasus Danubio apartamentos Vis en Bogotá" className="w-full h-96 object-cover rounded-lg shadow " />

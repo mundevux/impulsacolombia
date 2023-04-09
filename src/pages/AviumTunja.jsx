@@ -129,7 +129,6 @@ export function AviumTunja(){
             <Helmet>
                 <title>Avium Tunja | Apartamentos con piscina en Tunja</title>
                 <meta name="description" content="Conjunto Residencial Avium Tunja, apartamentos con piscina en Tunja, Boyacá. Conoce más sobre este proyecto de apartamentos en Tunja, Boyacá." />
-
             </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

@@ -5,6 +5,7 @@ import { ContactForm } from "../Components/ContactForm";
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
 import { Carousel } from 'flowbite-react';
+import { Helmet } from 'react-helmet';
 import PropertiesOfProjects from "../Components/PropertiesOfProjects";
 import iconWaze from '/src/assets/img/iconWaze.png'
 import iconMaps from '/src/assets/img/iconMaps.png'
@@ -43,6 +44,10 @@ export function CerasusSextaEntrada(){
 
     return(
         <div>
+            <Helmet>
+                <title>Cerasus Sexta Entrada | Vivienda de Interés Prioritario en Barranquilla</title>
+                <meta name="description" content="Cerasus Sexta Entrada es un proyecto de vivienda en Barranquilla, con apartamentos de 46m2, hasta 90 SMMLV." />
+            </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">
                 <img src={fachadaCerasusSextaEntrada} alt="Fachada Conjunto Residencial Cerasus Sexta Entrada apartamentos VIP en Barranquilla" className="w-full h-96 object-cover rounded-lg shadow " />

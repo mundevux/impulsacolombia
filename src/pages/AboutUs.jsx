@@ -1,6 +1,7 @@
 import { Footer } from "../Components/Footer";
 import { Header } from "../Components/Header";
 import Counter from "../Components/Counter";
+import { Helmet } from "react-helmet";
 import construccionAvium from "../assets/img/Construccion_Avium_Tunja.jpg";
 import imagenProyectos from "../assets/img/proyectos-entregados.png";
 import imagenEntregadas from "../assets/img/viviendas-entregadas.png";
@@ -9,6 +10,10 @@ import imagenEnConstruccion from "../assets/img/viviendas-a-entregar.png";
 export function AboutUs(){
     return(
         <div>
+            <Helmet>
+                <title>Sobre Nosotros | Impulsa Colombia Proyectos Inmobiliarios</title>
+                <meta name="description" content="Somos una promotora inmobiliaria Colombia con más de 10 años de experiencia en el mercado. Contamos con el respaldo Impulsa Proyectos Inmobiliarios. Nos especializamos en la construcción de viviendas de alta calidad y en la satisfacción de las necesidades de nuestros clientes." />
+            </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto pt-32 px-4 xl:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6">

@@ -5,6 +5,7 @@ import { ContactForm } from "../Components/ContactForm";
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
 import { Carousel } from 'flowbite-react';
+import { Helmet } from 'react-helmet';
 import PropertiesOfProjects from "../Components/PropertiesOfProjects";
 import iconWaze from '/src/assets/img/iconWaze.png'
 import iconMaps from '/src/assets/img/iconMaps.png'
@@ -43,6 +44,10 @@ export function PrunusSextaEntrada(){
 
     return(
         <div>
+            <Helmet>
+                <title>Prunus Sexta Entrada | Vivienda de Interés Social en Barranquilla</title>
+                <meta name="description" content="Prunus Sexta Entrada es un proyecto de vivienda en Barranquilla, con apartamentos de 53m2, hasta 115 SMMLV, con 2 habitaciones, 1 baño, sala comedor, cocina y zona de ropas." />
+            </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">
                 <img src={fachadaPrunusSextaEntrada} alt="Fachada Conjunto Residencial Prunus Sexta Entrada apartamentos VIP en Barranquilla" className="w-full h-96 object-cover rounded-lg shadow " />

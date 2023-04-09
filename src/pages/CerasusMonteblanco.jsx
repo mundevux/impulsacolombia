@@ -5,6 +5,7 @@ import { ContactForm } from "../Components/ContactForm";
 import Iframe from 'react-iframe';
 import Ubication from '../Components/Ubication';
 import { Carousel } from 'flowbite-react';
+import { Helmet } from 'react-helmet';
 import PropertiesOfProjects from "../Components/PropertiesOfProjects";
 import logoCerasusMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Logo_Cerasus_Monteblanco.png'
 import fachadaCerasusMonteblanco from '/src/assets/img/Cerasus_Monteblanco/Fachada_Cerasus_Monteblanco.jpg'
@@ -95,6 +96,10 @@ export function CerasusMonteblanco(){
 
     return(
         <div>
+            <Helmet>
+                <title>Cerasus Monteblanco | Apartamentos en Bogotá</title>
+                <meta name="description" content="Cerasus Monteblanco, apartamentos VIS en bogotá. Conjunto residencial dotado con: salón de juegos, gimansio, taller artesanal, ludo teca y salón comunal" />
+            </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">
                 <img src={fachadaCerasusMonteblanco} alt="Fachada Conjunto Residencial Cerasus Monteblanco apartamentos Vis en Bogotá" className="w-full h-96 object-cover rounded-lg shadow " />
@@ -139,10 +144,10 @@ export function CerasusMonteblanco(){
                         </Carousel>
                     </div>
                 </div>
-                <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
+                <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
                     En Cerasus Monteblanco, no solo tendrás un hogar cómodo y funcional, sino que también estarás ubicado en una <span className="text-amber-500">zona privilegiada</span>. La ubicación del proyecto ha sido elegida cuidadosamente para ofrecerte una vida tranquila y segura, pero al mismo tiempo, cerca de todo lo que necesitas.
                 </p>
-                <p className="text-base md:text-lg font-medium text-shark-900 pb-2 text-justify">
+                <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
                     No esperes más para tener <span className="text-amber-500">la vida que siempre has querido</span> y hacer realidad tus sueños de tener una casa propia. ¡Visítanos y descubre todo lo que Cerasus Monteblanco tiene para ofrecer!
                 </p>
                 <h2 className=' text-2xl md:text-4xl font-bold text-amber-400 pt-4 text-center'>Características</h2>

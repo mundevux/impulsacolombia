@@ -135,7 +135,7 @@ export function CerasusDanubio(){
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-5 ">
                     <div className="flex flex-col items-center ">
                         <p className="text-base md:text-lg font-medium text-shark-900 pb-2">
-                            Un nuevo concepto de construcción que busca dirigir los proyectos hacia un <span className="text-amber-500">factor humano</span> mas que monetario. Por eso creamos proyectos donde sin importar el estrato socioeconómico se busca el <span className="text-amber-500">bienestar de nuestros habitantes</span>.
+                            Un nuevo concepto de construcción que busca dirigir los proyectos hacia un <span className="text-amber-500">factor humano</span> más que monetario. Por eso creamos proyectos donde sin importar el estrato socioeconómico se busca el <span className="text-amber-500">bienestar de nuestros habitantes</span>.
                         </p>
                     </div>    
                     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 shadow-lg">

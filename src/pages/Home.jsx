@@ -79,15 +79,15 @@ export function Home() {
                             ¡Esa es nuestra fórmula del éxito!
                         </p>
                         <div className='w-full grid grid-cols-3 gap-6 justify-center items-center mt-10'>
-                            <div className='col-span3 md:col-span-1'>
+                            <div className='col-span-3 md:col-span-1'>
                                 <h2 className='text-2xl md:4xl font-semibold text-white pb-3 text-center'>Viviendas entregadas en el mundo</h2>
                                 <p className="text-xl md:text-3xl font-bold text-center text-amber-400 pb-2">Más de 18 mil viviendas</p>
                             </div>
-                            <div className='col-span3 md:col-span-1'>
+                            <div className='col-span-3 md:col-span-1'>
                                 <h2 className='text-2xl md:4xl font-semibold text-white pb-3 text-center'>Viviendas entregadas en España</h2>
                                 <Counter end={17610} />
                             </div>
-                            <div className='col-span3 md:col-span-1'>
+                            <div className='col-span-3 md:col-span-1'>
                                 <h2 className='text-2xl md:4xl font-semibold text-white pb-3 text-center'>Viviendas entregadas en Colombia</h2>
                                 <Counter end={866} />
                             </div>

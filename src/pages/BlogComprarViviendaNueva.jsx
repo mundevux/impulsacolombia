@@ -31,6 +31,7 @@ export function BlogComprarViviendaNueva() {
         textMaps: 'Llega con Maps',
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.520035040723!2d-74.0428268846926!3d4.679286043144424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9a695d790d%3A0x8c9bce1c3ed5d124!2sCl.%2098%20%238-37%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1680636132338!5m2!1ses!2sco"
+                    title="Oficina Principal"
                     className='w-full h-full rounded-md'
                     frameBorder="0"
                     loading='lazy'

@@ -35,6 +35,7 @@ export function PrunusSextaEntrada(){
         textMaps: 'Llega con Maps',   
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3918.348191988198!2d-74.79686113214434!3d10.861099405156592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1680731599145!5m2!1ses!2sco"
+                    title='Sala de Ventas Prunus Sexta Entrada'
                     className='w-full h-full rounded-md'
                     frameBorder="0"
                     loading='lazy'
@@ -47,6 +48,7 @@ export function PrunusSextaEntrada(){
             <Helmet>
                 <title>Prunus Sexta Entrada | Vivienda de Interés Social en Barranquilla</title>
                 <meta name="description" content="Prunus Sexta Entrada es un proyecto de vivienda en Barranquilla, con apartamentos de 53m2, hasta 115 SMMLV, con 2 habitaciones, 1 baño, sala comedor, cocina y zona de ropas." />
+                <meta name='keywords' content='Apartamentos en Malambo, Apartamentos en Ballanquilla, Vivienda de interés social en Barranquilla, Vvienda de interés social en Malambo' />
             </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

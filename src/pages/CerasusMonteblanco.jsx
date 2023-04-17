@@ -44,6 +44,7 @@ export function CerasusMonteblanco(){
         textMaps: 'Llega con Maps',   
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.6425980615309!2d-74.11951147924401!3d4.542599976786291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa2047bf585eb%3A0x52f958ff789b6660!2scerasus%20danubio!5e0!3m2!1ses!2sco!4v1680648024910!5m2!1ses!2sco"
+                    title='Sala de Ventas Cerasus Monteblanco'
                     className='w-full h-full rounded-md'
                     frameBorder="0"
                     loading='lazy'
@@ -99,6 +100,7 @@ export function CerasusMonteblanco(){
             <Helmet>
                 <title>Cerasus Monteblanco | Apartamentos en Bogotá</title>
                 <meta name="description" content="Cerasus Monteblanco, apartamentos VIS en bogotá. Conjunto residencial dotado con: salón de juegos, gimansio, taller artesanal, ludo teca y salón comunal" />
+                <meta name="keywords" content="Apartamentos en Bogotá, Cerasus Monteblanco, apartamentos VIS en bogotá, apartamentos en bogotá" />
             </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

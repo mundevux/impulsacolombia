@@ -51,6 +51,7 @@ export function AviumTunja(){
         textMaps: 'Llega con Maps',   
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.6425980615309!2d-74.11951147924401!3d4.542599976786291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa2047bf585eb%3A0x52f958ff789b6660!2scerasus%20danubio!5e0!3m2!1ses!2sco!4v1680648024910!5m2!1ses!2sco"
+                    title='Sala de Ventas Avium Tunja'
                     className='w-full h-full rounded-md'
                     frameBorder="0"
                     loading='lazy'
@@ -129,6 +130,7 @@ export function AviumTunja(){
             <Helmet>
                 <title>Avium Tunja | Apartamentos con piscina en Tunja</title>
                 <meta name="description" content="Conjunto Residencial Avium Tunja, apartamentos con piscina en Tunja, Boyacá. Conoce más sobre este proyecto de apartamentos en Tunja, Boyacá." />
+                <meta name='keywords' content='Aparatamentos con Piscina, apartamentos en Tunja, apartamentos con piscina en Tunja, '/>
             </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

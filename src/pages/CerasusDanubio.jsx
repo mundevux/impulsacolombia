@@ -44,6 +44,7 @@ export function CerasusDanubio(){
         textMaps: 'Llega con Maps',   
         iframe: <Iframe 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.6425980615309!2d-74.11951147924401!3d4.542599976786291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa2047bf585eb%3A0x52f958ff789b6660!2scerasus%20danubio!5e0!3m2!1ses!2sco!4v1680648024910!5m2!1ses!2sco"
+                    title='Sala de Ventas Cerasus Danubio'
                     className='w-full h-full rounded-md'
                     frameBorder="0"
                     loading='lazy'
@@ -107,6 +108,7 @@ export function CerasusDanubio(){
             <Helmet>
                 <title>Cerasus Danubio | Vivienda de Interés Social en Bogotá</title>
                 <meta name="description" content="Cerasus Danubio es un conjunto residencial de vivienda de interés social en Bogotá, con apartamentos de 2 y 3 habitaciones, con excelentes acabados y ubicación privilegiada." />
+                <meta name="keywords" content="Cerasus Danubio, apartamentos en Bogotá, vivienda de interés social en Bogotá, vivienda de interés social en Usme" />
             </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

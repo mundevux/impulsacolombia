@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export function Footer() {
 
   return (
-    <footer className="pt-10 pb-6 bg-shark-900">
+    <footer className="pt-10 pb-2 bg-shark-900">
       <div className="mx-auto max-w-7xl px-4 xl:px-6">
         <div className="m-auto">
           <div className="grid grid-cols-5">
@@ -68,6 +68,7 @@ export function Footer() {
                     <li>
                         <a
                         href="https://www.facebook.com/ImpulsaColombia"
+                        aria-label='Facebook'
                         className="flex items-center space-x-2 px-2 transition text-white hover:text-amber-500"
                         target='_blank'
                         >
@@ -77,7 +78,8 @@ export function Footer() {
                     
                     <li>
                         <a
-                        href="#"
+                        href="https://www.instagram.com/impulsacolombiasas/"
+                        aria-label='Instagram'
                         className="flex items-center space-x-2 px-2 transition text-white hover:text-amber-500"
                         target='_blank'
                         >
@@ -88,6 +90,7 @@ export function Footer() {
                     <li>
                         <a
                         href="https://www.linkedin.com/in/impulsa-colombia-5b27a5185/?originalSubdomain=co"
+                        aria-label='Linkedin'
                         className="flex items-center space-x-2 px-2 transition text-white hover:text-amber-500"
                         target='_blank'
                         >
@@ -97,8 +100,8 @@ export function Footer() {
                     </ul>
             </div>
           </div>
-          <div className='text-center mt-4 border-t-2  border-primary dark:border-secondary'>
-            <span className="block text-gray-500 dark:text-gray-400 pt-4">
+          <div className='text-center mt-3 border-t-2  border-primary dark:border-secondary'>
+            <span className="block text-xs text-gray-500 dark:text-gray-400 mt-2">
               Copyright &copy; <span id="year">2023</span> by <a href="https://codcreativo.com/" target='_blank'>Código Creativo</a>. All rights reserved.
             </span>
           </div>

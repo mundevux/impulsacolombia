@@ -32,7 +32,6 @@ export function RoutesApp() {
         <Route  path="/blog/:consejos-para-comprar-vivienda" element={<BlogComprarViviendaNueva />} />
         <Route path="/aboutus" element={<AboutUs />} />
 
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

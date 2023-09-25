@@ -101,6 +101,9 @@ export function CerasusMonteblanco(){
                 <title>Cerasus Monteblanco | Apartamentos en Bogotá</title>
                 <meta name="description" content="Cerasus Monteblanco, apartamentos VIS en bogotá. Conjunto residencial dotado con: salón de juegos, gimansio, taller artesanal, ludo teca y salón comunal" />
                 <meta name="keywords" content="Apartamentos en Bogotá, Cerasus Monteblanco, apartamentos VIS en bogotá, apartamentos en bogotá" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Impulsa Colombia" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

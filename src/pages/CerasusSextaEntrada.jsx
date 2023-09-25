@@ -49,6 +49,9 @@ export function CerasusSextaEntrada(){
                 <title>Cerasus Sexta Entrada | Vivienda de Interés Prioritario en Barranquilla</title>
                 <meta name="description" content="Cerasus Sexta Entrada es un proyecto de vivienda en Barranquilla, con apartamentos de 46m2, hasta 90 SMMLV." />
                 <meta name='keywords' content='Apartamentos en Malambo, Apartamentos en Ballanquilla, Vivienda de interés prioritario en Barranquilla, Vvienda de interés prioritario en Malambo'/>
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Impulsa Colombia" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

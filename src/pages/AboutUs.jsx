@@ -13,6 +13,9 @@ export function AboutUs(){
             <Helmet>
                 <title>Sobre Nosotros | Impulsa Colombia Proyectos Inmobiliarios</title>
                 <meta name="description" content="Somos una promotora inmobiliaria Colombia con más de 10 años de experiencia en el mercado. Contamos con el respaldo Impulsa Proyectos Inmobiliarios. Nos especializamos en la construcción de viviendas de alta calidad y en la satisfacción de las necesidades de nuestros clientes." />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Impulsa Colombia" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto pt-32 px-4 xl:px-6">

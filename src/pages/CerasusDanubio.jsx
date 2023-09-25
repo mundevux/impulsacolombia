@@ -109,6 +109,9 @@ export function CerasusDanubio(){
                 <title>Cerasus Danubio | Vivienda de Interés Social en Bogotá</title>
                 <meta name="description" content="Cerasus Danubio es un conjunto residencial de vivienda de interés social en Bogotá, con apartamentos de 2 y 3 habitaciones, con excelentes acabados y ubicación privilegiada." />
                 <meta name="keywords" content="Cerasus Danubio, apartamentos en Bogotá, vivienda de interés social en Bogotá, vivienda de interés social en Usme" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Impulsa Colombia" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>    
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

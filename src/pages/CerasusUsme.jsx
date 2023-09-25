@@ -123,6 +123,9 @@ export function CerasusUsme(){
                 <title>Cerasus Usme | Apartamentos de Interés Prioritario en Bogotá</title>
                 <meta name="description" content="Conjunto Residencial Cerasus Usme, apartamentos de interes prioritario en Bogotá, ubicado en la zona sur de Bogotá, cerca al portal del Tunal, avenidas principales, colegios, hospitales, parques, zonas verdes, transporte público, etc." />
                 <meta name="keywords" content="Apartamentos de interes prioritario en Bogotá, apartamentos de interes prioritario en Usme" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Impulsa Colombia" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>
             <Header />
             <div className="max-w-7xl mx-auto py-10 px-4 xl:px-6">

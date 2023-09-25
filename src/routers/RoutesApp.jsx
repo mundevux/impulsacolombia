@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop'; 
 import { Home } from '/src/pages/Home';
-import { CerasusMonteblanco } from '../pages/CerasusMonteblanco';
-import { CerasusDanubio } from '../pages/CerasusDanubio';
-import { CerasusUsme } from '../pages/CerasusUsme';
-import { CerasusSextaEntrada } from '../pages/CerasusSextaEntrada';
-import { AviumTunja } from '../pages/AviumTunja';
-import { PrunusSextaEntrada } from '../pages/PrunusSextaEntrada';
-import { Blog } from '../pages/Blog';
-import { BlogMiCasaYa } from '../pages/BlogMiCasaYa';
-import { BlogComprarViviendaNueva } from '../pages/BlogComprarViviendaNueva';
-import { AboutUs } from '../pages/AboutUs';
-import { NotFound } from '../pages/NotFound';
+import { CerasusMonteblanco } from '/src/pages/CerasusMonteblanco';
+import { CerasusDanubio } from '/src/pages/CerasusDanubio';
+import { CerasusUsme } from '/src/pages/CerasusUsme';
+import { CerasusSextaEntrada } from '/src/pages/CerasusSextaEntrada';
+import { AviumTunja } from '/src/pages/AviumTunja';
+import { PrunusSextaEntrada } from '/src/pages/PrunusSextaEntrada';
+import { Blog } from '/src/pages/Blog';
+import { BlogMiCasaYa } from '/src/pages/BlogMiCasaYa';
+import { BlogComprarViviendaNueva } from '/src/pages/BlogComprarViviendaNueva';
+import { AboutUs } from '/src/pages/AboutUs';
+import { NotFound } from '/src/pages/NotFound';
 
 
 
@@ -31,7 +31,7 @@ export function RoutesApp() {
         <Route path="/blog/:subsidio-mi-casa-ya" element={<BlogMiCasaYa />} />
         <Route  path="/blog/:consejos-para-comprar-vivienda" element={<BlogComprarViviendaNueva />} />
         <Route path="/aboutus" element={<AboutUs />} />
-
+        
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

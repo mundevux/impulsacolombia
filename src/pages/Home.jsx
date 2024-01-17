@@ -74,7 +74,7 @@ export function Home() {
       </Helmet>
 
       <Header />
-      {showBanner && <Banner onClose={onClose} />}
+      {/*{showBanner && <Banner onClose={onClose} />}*/}
       <div className="max-w-7xl mx-auto pt-32 px-4 xl:px-6">
         <div className="flex flex-col justify-around items-center">
           <div className="flex flex-col justify-center items-start w-full">
@@ -171,7 +171,7 @@ export function Home() {
               />
             </a>
           </div>
-          <div className="col-span-5 lg:col-span-1 p-4 grayscale transition duration-200 hover:grayscale-0">
+          {/*<div className="col-span-5 lg:col-span-1 p-4 grayscale transition duration-200 hover:grayscale-0">
             <a
               href="https://www.credicorpcapital.com/Colombia/Paginas/NHome.aspx"
               target="_blank"
@@ -185,7 +185,7 @@ export function Home() {
                 height=""
               />
             </a>
-          </div>
+          </div>*/}
         </div>
       </div>
       <div className="pt-28 pb-12 bg-white">

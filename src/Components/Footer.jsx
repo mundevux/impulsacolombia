@@ -106,7 +106,7 @@ export function Footer() {
                   (317) 667 6375
                 </a>
               </div>
-              <ul role="list" className="flex items-center">
+              {/*<ul role="list" className="flex items-center">
                 <li>
                   <a
                     href="https://www.facebook.com/ImpulsaColombia"
@@ -160,7 +160,7 @@ export function Footer() {
                     </svg>
                   </a>
                 </li>
-              </ul>
+              </ul>*/}
             </div>
           </div>
           <div className="text-center mt-3 border-t-2  border-primary dark:border-secondary">

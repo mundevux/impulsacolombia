@@ -154,7 +154,7 @@ export function BlogMiCasaYa() {
             crédito, este se encargará de solicitar la asignación del subsidio y
             del trámite del desembolso del crédito.
           </p>
-          <h2 className=" text-xl md:text-2xl font-bold text-amber-500 pb-4">
+          {/*<h2 className=" text-xl md:text-2xl font-bold text-amber-500 pb-4">
             Proyectos de vivienda que aplican a mi casa ya
           </h2>
           <p className="text-base md:text-lg font-medium text-shark-900 pb-5">
@@ -169,7 +169,7 @@ export function BlogMiCasaYa() {
             cómodos plazos de pago, ya que son proyectos de vivienda de interés
             social. Ubicado en Usme, cuenta con espacios desde 40 mt2 hasta los
             45 mt2, dos torres de 10 pisos desde $143 millones.
-          </p>
+          </p>*/}
         </div>
         <div
           id="contact"

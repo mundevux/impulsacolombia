@@ -122,7 +122,7 @@ export function Home() {
                     </div>
                     */}
         </div>
-        <div className="mt-12 grid grid-cols-3 sm:grid-cols-5 bg-white rounded-t-md bor py-12">
+        <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 bg-white rounded-t-md bor py-12">
           <div className="col-span-5 lg:col-span-1 p-4 grayscale transition duration-200 hover:grayscale-0">
             <a href="https://impulsaproyectos.com/" target="_blank">
               <img
